@@ -1,331 +1,225 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Nashco Global Automotive Solutions - Comprehensive automotive components and parts distribution. OEM and aftermarket automotive parts supplier with global reach.">
-    <meta name="keywords" content="automotive parts, car components, OEM parts, aftermarket parts, automotive supplier, vehicle parts, auto components, automotive distribution">
-    <meta name="author" content="Nashco Global Chemicals">
-    <title>Automotive Parts & Solutions - Nashco Global | OEM & Aftermarket Supplier</title>
-    <link rel="stylesheet" href="styles.css">
-    
-    <!-- JSON-LD Organization Schema -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "Organization",
-        "name": "Nashco Global Chemicals",
-        "url": "https://nashcoglobal.com",
-        "logo": "https://nashcoglobal.com/logo.png",
-        "description": "Leading provider of chemical solutions, automotive parts, complete automation manufacturing solutions, and international trading services.",
-        "address": {
-            "@type": "PostalAddress",
-            "addressCountry": "Global"
-        },
-        "contactPoint": {
-            "@type": "ContactPoint",
-            "contactType": "Customer Service",
-            "availableLanguage": ["English"]
-        },
-        "sameAs": [
-            "https://www.linkedin.com/company/nashco-global",
-            "https://twitter.com/nashcoglobal"
-        ]
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Automotive Division | Nashco Global</title>
+  <meta name="description"
+    content="Automotive Division: Quality automotive products, services, and partnerships across the GCC.">
+  <meta property="og:title" content="Automotive Division | Nashco Global">
+  <meta property="og:description"
+    content="Automotive Division: Quality automotive products, services, and partnerships across the GCC.">
+  <meta property="og:image" content="Assets/images/automotive-maxcar.jpg">
+  <meta property="og:url" content="https://nashcoglobal.com/automotive.html">
+  <meta name="theme-color" content="#0B0E17">
+  <link rel="manifest" href="manifest.json">
+  <link rel="apple-touch-icon" href="Assets/images/logo-nashco.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper@9/swiper-bundle.min.css">
+  <link href="Assets/css/styles.css" rel="stylesheet">
+  <link rel="icon" type="image/png" href="Assets/images/logo-nashco.png">
+  <style>
+    /* Automotive page color adjustments for visibility */
+    .automotive-page {
+      color: #222;
     }
-    </script>
+
+    .automotive-page .lead {
+      color: #333 !important;
+    }
+
+    .automotive-page .bg-light,
+    .automotive-page .bg-white,
+    .automotive-page .card,
+    .automotive-page .shadow-sm {
+      color: #222 !important;
+    }
+
+    .automotive-page .text-muted {
+      color: #6c757d !important;
+    }
+
+    .automotive-page .hero-section .container,
+    .automotive-page .hero-section h1,
+    .automotive-page .hero-section p {
+      color: #fff !important;
+      text-shadow: none !important;
+    }
+  </style>
 </head>
-<body>
-    <!-- Header -->
-    <header>
-        <div class="header-container">
-            <div class="logo">
-                <h1>NASHCO GLOBAL</h1>
-                <span>Chemicals | Automotive | Manufacturing | Trading</span>
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="index.html" aria-label="Home page">Home</a></li>
-                    <li><a href="about.html" aria-label="About Nashco Global">About</a></li>
-                    <li><a href="chemicals.html" aria-label="Chemical solutions">Chemicals</a></li>
-                    <li><a href="automotive.html" class="active" aria-label="Automotive parts">Automotive</a></li>
-                    <li><a href="manufacturing.html" aria-label="Manufacturing automation">Manufacturing</a></li>
-                    <li><a href="trading.html" aria-label="Trading services">Trading</a></li>
-                    <li><a href="contact.html" aria-label="Contact us">Contact</a></li>
-                </ul>
-            </nav>
+
+<body data-bs-theme="light" class="automotive-page">
+  <!-- Navbar (standardized: responsive, fixed-top) -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="Assets/images/logo-nashco.png" alt="Nashco" style="height:56px;max-height:72px;object-fit:contain;">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="zahy-alkhaleej.html">Zahy Al Khaleej LLC</a></li>
+          <li class="nav-item"><a class="nav-link active" href="automotive.html">Automotive</a></li>
+          <li class="nav-item"><a class="nav-link" href="manufacturing.html">Manufacturing</a></li>
+          <li class="nav-item"><a class="nav-link" href="trading.html">Trading</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Hero Section - standardized plain image -->
+  <header class="site-hero">
+    <img src="Assets/images/automotive-maxcar.jpg" alt="Automotive Division" class="site-hero__img">
+  </header>
+
+  <!-- Intro text moved below hero -->
+  <section class="py-4">
+    <div class="container text-center">
+      <h1 class="display-5 fw-bold mb-2">Automotive Division</h1>
+      <p class="lead mb-0">Driving quality and innovation across the GCC</p>
+    </div>
+  </section>
+  <!-- Overview -->
+  <section class="py-5 bg-light">
+    <div class="container">
+      <div class="row mb-5" data-aos="fade-up">
+        <div class="col-lg-8 mx-auto text-center">
+          <h2 class="fw-bold mb-3">Our Automotive Services</h2>
+          <p class="text-muted">Nashco Global partners with leading brands to deliver quality automotive products,
+            manufacturing support, logistics, and innovative solutions.</p>
         </div>
-    </header>
-
-    <!-- Hero Section -->
-    <section class="hero">
-        <h1>Automotive Parts & Solutions</h1>
-        <p>Comprehensive automotive components distribution from OEM to aftermarket solutions</p>
-        <a href="contact.html" class="cta-button" aria-label="Request automotive parts quote">Get Automotive Quote</a>
-    </section>
-
-    <!-- Main Content -->
-    <main>
-        <div class="container">
-            <!-- Overview Section -->
-            <section>
-                <h2>Complete Automotive Supply Solutions</h2>
-                <p style="text-align: center; max-width: 800px; margin: 0 auto 3rem; font-size: 1.1rem; color: var(--text-light);">
-                    Nashco Global provides comprehensive automotive parts and components for manufacturers, distributors, and service centers worldwide. Our extensive network ensures quality parts with reliable delivery and competitive pricing.
-                </p>
-
-                <div class="sector-cards">
-                    <article class="card">
-                        <div class="card-icon" aria-hidden="true">🏭</div>
-                        <h3>OEM Parts</h3>
-                        <p>Original Equipment Manufacturer parts meeting exact specifications for vehicle manufacturers and assembly plants worldwide.</p>
-                    </article>
-
-                    <article class="card">
-                        <div class="card-icon" aria-hidden="true">🔧</div>
-                        <h3>Aftermarket Parts</h3>
-                        <p>High-quality aftermarket components for repair shops, service centers, and parts distributors with competitive pricing and availability.</p>
-                    </article>
-
-                    <article class="card">
-                        <div class="card-icon" aria-hidden="true">⚡</div>
-                        <h3>Performance Parts</h3>
-                        <p>Specialized performance and enhancement components for automotive enthusiasts and racing applications with proven quality.</p>
-                    </article>
-                </div>
-            </section>
-
-            <!-- Product Categories -->
-            <section>
-                <h2>Automotive Product Categories</h2>
-                <div class="content-grid">
-                    <article class="content-item">
-                        <h3>Engine Components</h3>
-                        <ul>
-                            <li>Engine blocks and heads</li>
-                            <li>Pistons and connecting rods</li>
-                            <li>Crankshafts and camshafts</li>
-                            <li>Gaskets and seals</li>
-                            <li>Timing belts and chains</li>
-                            <li>Oil pumps and filters</li>
-                        </ul>
-                    </article>
-
-                    <article class="content-item">
-                        <h3>Transmission Systems</h3>
-                        <ul>
-                            <li>Manual transmissions</li>
-                            <li>Automatic transmissions</li>
-                            <li>Clutch systems</li>
-                            <li>Driveshafts and axles</li>
-                            <li>Transmission fluids</li>
-                            <li>Gearbox components</li>
-                        </ul>
-                    </article>
-
-                    <article class="content-item">
-                        <h3>Brake Systems</h3>
-                        <ul>
-                            <li>Brake pads and shoes</li>
-                            <li>Brake discs and drums</li>
-                            <li>Brake calipers</li>
-                            <li>Master cylinders</li>
-                            <li>ABS components</li>
-                            <li>Brake lines and hoses</li>
-                        </ul>
-                    </article>
-
-                    <article class="content-item">
-                        <h3>Suspension & Steering</h3>
-                        <ul>
-                            <li>Shock absorbers and struts</li>
-                            <li>Springs and coilovers</li>
-                            <li>Control arms and bushings</li>
-                            <li>Steering racks and pumps</li>
-                            <li>Ball joints and tie rods</li>
-                            <li>Stabilizer bars</li>
-                        </ul>
-                    </article>
-
-                    <article class="content-item">
-                        <h3>Electrical Systems</h3>
-                        <ul>
-                            <li>Alternators and starters</li>
-                            <li>Batteries</li>
-                            <li>Sensors and switches</li>
-                            <li>Wiring harnesses</li>
-                            <li>Ignition systems</li>
-                            <li>Lighting components</li>
-                        </ul>
-                    </article>
-
-                    <article class="content-item">
-                        <h3>Body & Trim</h3>
-                        <ul>
-                            <li>Body panels and fenders</li>
-                            <li>Bumpers and grilles</li>
-                            <li>Mirrors and glass</li>
-                            <li>Interior trim components</li>
-                            <li>Weatherstripping</li>
-                            <li>Exterior accessories</li>
-                        </ul>
-                    </article>
-
-                    <article class="content-item">
-                        <h3>Cooling & Climate</h3>
-                        <ul>
-                            <li>Radiators and condensers</li>
-                            <li>Water pumps</li>
-                            <li>Thermostats</li>
-                            <li>AC compressors</li>
-                            <li>Heater cores</li>
-                            <li>Cooling fans and hoses</li>
-                        </ul>
-                    </article>
-
-                    <article class="content-item">
-                        <h3>Fuel Systems</h3>
-                        <ul>
-                            <li>Fuel pumps and injectors</li>
-                            <li>Fuel tanks</li>
-                            <li>Fuel filters</li>
-                            <li>Fuel lines and fittings</li>
-                            <li>Carburetor components</li>
-                            <li>Fuel pressure regulators</li>
-                        </ul>
-                    </article>
-
-                    <article class="content-item">
-                        <h3>Exhaust Systems</h3>
-                        <ul>
-                            <li>Exhaust manifolds</li>
-                            <li>Catalytic converters</li>
-                            <li>Mufflers and resonators</li>
-                            <li>Exhaust pipes</li>
-                            <li>Oxygen sensors</li>
-                            <li>Exhaust hangers</li>
-                        </ul>
-                    </article>
-                </div>
-            </section>
-
-            <!-- Vehicle Types -->
-            <section class="stats">
-                <h2 style="color: white;">Vehicle Applications</h2>
-                <div class="stats-grid">
-                    <div class="stat-item">
-                        <h3>🚗</h3>
-                        <p>Passenger Vehicles</p>
-                    </div>
-                    <div class="stat-item">
-                        <h3>🚚</h3>
-                        <p>Commercial Trucks</p>
-                    </div>
-                    <div class="stat-item">
-                        <h3>🚌</h3>
-                        <p>Buses & Coaches</p>
-                    </div>
-                    <div class="stat-item">
-                        <h3>🏗️</h3>
-                        <p>Heavy Equipment</p>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Value Proposition -->
-            <section>
-                <h2>Why Choose Nashco Automotive Solutions?</h2>
-                <div class="sector-cards">
-                    <article class="card">
-                        <div class="card-icon" aria-hidden="true">✓</div>
-                        <h3>Quality Guarantee</h3>
-                        <p>All automotive parts are sourced from certified manufacturers and undergo rigorous quality control inspections to ensure reliability and performance.</p>
-                    </article>
-
-                    <article class="card">
-                        <div class="card-icon" aria-hidden="true">📦</div>
-                        <h3>Extensive Inventory</h3>
-                        <p>Large stock of commonly needed parts ensures quick availability and fast delivery for urgent orders and standard requirements.</p>
-                    </article>
-
-                    <article class="card">
-                        <div class="card-icon" aria-hidden="true">🌐</div>
-                        <h3>Global Distribution</h3>
-                        <p>Worldwide distribution network enables us to serve clients across continents with reliable logistics and timely delivery schedules.</p>
-                    </article>
-
-                    <article class="card">
-                        <div class="card-icon" aria-hidden="true">💰</div>
-                        <h3>Competitive Pricing</h3>
-                        <p>Direct relationships with manufacturers allow us to offer competitive pricing on bulk orders while maintaining the highest quality standards.</p>
-                    </article>
-
-                    <article class="card">
-                        <div class="card-icon" aria-hidden="true">🔍</div>
-                        <h3>Part Identification</h3>
-                        <p>Expert technical support team helps identify correct parts using VIN numbers, OEM part numbers, or vehicle specifications.</p>
-                    </article>
-
-                    <article class="card">
-                        <div class="card-icon" aria-hidden="true">🛡️</div>
-                        <h3>Warranty Support</h3>
-                        <p>Comprehensive warranty coverage on all parts with dedicated support team to handle warranty claims and replacements efficiently.</p>
-                    </article>
-                </div>
-            </section>
-
-            <!-- Call to Action -->
-            <section>
-                <h2>Partner with Nashco Automotive</h2>
-                <p style="text-align: center; max-width: 700px; margin: 0 auto 2rem; font-size: 1.1rem;">
-                    Whether you need OEM parts for manufacturing, aftermarket components for distribution, or specialized automotive solutions, our experienced team is ready to assist you.
-                </p>
-                <div style="text-align: center;">
-                    <a href="contact.html" class="cta-button" aria-label="Contact automotive sales team">Contact Automotive Team</a>
-                </div>
-            </section>
+      </div>
+      <div class="row g-4 text-center" data-aos="fade-up" data-aos-delay="100">
+        <div class="col-md-4">
+          <div class="p-4 bg-white rounded shadow-sm h-100">
+            <svg width="40" height="40" fill="none" viewBox="0 0 48 48" aria-hidden="true" class="mb-2">
+              <circle cx="24" cy="24" r="20" fill="#ffc107" />
+              <rect x="16" y="20" width="16" height="8" rx="2" fill="#fff" />
+              <circle cx="20" cy="32" r="3" fill="#00A3AD" />
+              <circle cx="28" cy="32" r="3" fill="#00A3AD" />
+            </svg>
+            <h6 class="fw-bold text-primary mb-2">Manufacturing Support</h6>
+            <p class="mb-0">Expertise in automotive manufacturing and supply chain.</p>
+          </div>
         </div>
-    </main>
+        <div class="col-md-4">
+          <div class="p-4 bg-white rounded shadow-sm h-100">
+            <svg width="40" height="40" fill="none" viewBox="0 0 48 48" aria-hidden="true" class="mb-2">
+              <rect x="8" y="8" width="32" height="32" rx="8" fill="#0dcaf0" />
+              <path d="M24 16v16M16 24h16" stroke="#fff" stroke-width="3" stroke-linecap="round" />
+            </svg>
+            <h6 class="fw-bold text-primary mb-2">Logistics</h6>
+            <p class="mb-0">Efficient logistics and distribution for automotive clients.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="p-4 bg-white rounded shadow-sm h-100">
+            <svg width="40" height="40" fill="none" viewBox="0 0 48 48" aria-hidden="true" class="mb-2">
+              <rect x="8" y="8" width="32" height="32" rx="8" fill="#fd7e14" />
+              <path d="M18 30h12M18 26h12M18 22h12" stroke="#fff" stroke-width="2.5" stroke-linecap="round" />
+            </svg>
+            <h6 class="fw-bold text-primary mb-2">Innovation</h6>
+            <p class="mb-0">Pioneering new technologies and solutions for the automotive sector.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Testimonials -->
+  <!-- Integrated Automotive Solutions -->
+  <section class="py-5">
+    <div class="container">
+      <div class="row mb-4" data-aos="fade-up">
+        <div class="col text-center">
+          <h2 class="fw-bold mb-3">Integrated Automotive Solutions</h2>
+          <p class="text-muted mb-0">Through a strategic network of companies, Nashco Global offers a comprehensive
+            suite of automotive services:</p>
+        </div>
+      </div>
 
-    <!-- Footer -->
-    <footer>
-        <div class="footer-container">
-            <div class="footer-section">
-                <h3>Nashco Global</h3>
-                <p>Your trusted partner for chemicals, automotive, manufacturing automation, and international trading solutions.</p>
-            </div>
-
-            <div class="footer-section">
-                <h3>Quick Links</h3>
-                <ul>
-                    <li><a href="index.html" aria-label="Home page">Home</a></li>
-                    <li><a href="about.html" aria-label="About us">About Us</a></li>
-                    <li><a href="contact.html" aria-label="Contact us">Contact</a></li>
-                </ul>
-            </div>
-
-            <div class="footer-section">
-                <h3>Our Services</h3>
-                <ul>
-                    <li><a href="chemicals.html" aria-label="Chemical solutions">Chemicals</a></li>
-                    <li><a href="automotive.html" aria-label="Automotive solutions">Automotive</a></li>
-                    <li><a href="manufacturing.html" aria-label="Manufacturing automation">Manufacturing</a></li>
-                    <li><a href="trading.html" aria-label="Trading services">Trading</a></li>
-                </ul>
-            </div>
-
-            <div class="footer-section">
-                <h3>Contact Info</h3>
-                <ul>
-                    <li>Email: info@nashcoglobal.com</li>
-                    <li>Phone: +1 (555) 123-4567</li>
-                    <li>Address: Global Operations</li>
-                </ul>
-            </div>
+      <div class="row g-4 mt-4" data-aos="fade-up">
+        <div class="col-md-6">
+          <div class="p-4 bg-white rounded shadow-sm h-100">
+            <h5 class="fw-semibold">Zahy Al Khaleej LLC – Sohar, Oman</h5>
+            <p class="text-muted">A trusted name in industrial and automotive trading, Zahy Al Khaleej LLC specializes
+              in:</p>
+            <ul>
+              <li><strong>Refrigerants &amp; Chemicals:</strong> HFCs, HCFCs, HFOs, and Natural Refrigerants for
+                automotive and industrial applications.</li>
+              <li><strong>Automotive Spare Parts:</strong> OEM and aftermarket components for 4-wheelers, ensuring
+                performance and compatibility.</li>
+              <li><strong>Vehicle Trading:</strong> Import and export of new and used vehicles, with a focus on quality
+                and compliance.</li>
+            </ul>
+          </div>
         </div>
 
-        <div class="footer-bottom">
-            <p>&copy; 2026 Nashco Global Chemicals. All rights reserved.</p>
+        <div class="col-md-6">
+          <div class="p-4 bg-white rounded shadow-sm h-100">
+            <h5 class="fw-semibold">Free Test Garage LLC – Ajman, UAE</h5>
+            <p class="text-muted">A service-oriented facility offering diagnostics, maintenance, and technical support
+              for a wide range of vehicles. Known for its precision and customer-centric approach.</p>
+            <hr>
+            <h5 class="fw-semibold mt-3">Zahy Auto Spare Parts Trading LLC – Ajman, UAE</h5>
+            <p class="text-muted mb-0">A dynamic trading hub for automotive parts, catering to both retail and wholesale
+              clients. Ensures availability of genuine and high-performance components for various vehicle brands.</p>
+          </div>
         </div>
-    </footer>
+      </div>
+    </div>
+  </section>
+  <section class="py-5">
+    <div class="container">
+      <div class="row mb-4" data-aos="fade-up">
+        <div class="col text-center">
+          <h2 class="fw-bold mb-3">Success Stories</h2>
+        </div>
+      </div>
+      <div class="row g-4 justify-content-center align-items-center">
+        <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
+          <div class="bg-white rounded shadow-sm p-4 h-100">
+            <blockquote class="blockquote mb-0">
+              <p>“Nashco Global’s automotive division helped us streamline our supply chain and improve product
+                quality.”</p>
+              <footer class="blockquote-footer">- Regional Automotive Partner</footer>
+            </blockquote>
+          </div>
+        </div>
+        <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
+          <div class="bg-white rounded shadow-sm p-4 h-100">
+            <blockquote class="blockquote mb-0">
+              <p>“Their logistics and innovation teams are second to none in the GCC.”</p>
+              <footer class="blockquote-footer">- OEM Client</footer>
+            </blockquote>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Footer (shared) -->
+  <footer class="bg-dark text-white py-4">
+    <div class="container text-center">
+      <!-- licensed-by image removed -->
+      <p>&copy; 2025 Nashco Global. All Rights Reserved.</p>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script src="https://unpkg.com/gsap@3/dist/gsap.min.js"></script>
+  <script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/swiper@9/swiper-bundle.min.js"></script>
+  <script>
+    AOS.init({ once: true, duration: 900, offset: 60 });
+    gsap.from('.hero-section h1', { opacity: 0, y: 60, duration: 1, delay: 0.2 });
+    gsap.from('.hero-section p', { opacity: 0, y: 40, duration: 1, delay: 0.5 });
+  </script>
 </body>
+
 </html>

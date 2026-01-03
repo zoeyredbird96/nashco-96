@@ -1,328 +1,231 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Contact Nashco Global Chemicals - Get in touch with our team for chemicals, automotive, manufacturing automation, and trading inquiries. We're here to help with your business needs.">
-    <meta name="keywords" content="contact nashco, chemical supplier contact, automotive parts inquiry, manufacturing automation consultation, trading services contact, business inquiry">
-    <meta name="author" content="Nashco Global Chemicals">
-    <title>Contact Us - Nashco Global | Get in Touch for Business Solutions</title>
-    <link rel="stylesheet" href="styles.css">
-    
-    <!-- JSON-LD Organization Schema -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "Organization",
-        "name": "Nashco Global Chemicals",
-        "url": "https://nashcoglobal.com",
-        "logo": "https://nashcoglobal.com/logo.png",
-        "description": "Leading provider of chemical solutions, automotive parts, complete automation manufacturing solutions, and international trading services.",
-        "address": {
-            "@type": "PostalAddress",
-            "addressCountry": "Global"
-        },
-        "contactPoint": {
-            "@type": "ContactPoint",
-            "contactType": "Customer Service",
-            "availableLanguage": ["English"]
-        },
-        "sameAs": [
-            "https://www.linkedin.com/company/nashco-global",
-            "https://twitter.com/nashcoglobal"
-        ]
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nashco Global - Contact Us</title>
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#0B0E17">
+  <link rel="apple-touch-icon" href="Assets/images/logo-nashco.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="Assets/css/styles.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper@9/swiper-bundle.min.css">
+  <style>
+    /* Force large logo in navbar for branding */
+    .logo-nashco-navbar-giant {
+      height: 110px !important;
+      max-height: 120px !important;
+      max-width: 420px !important;
+      width: 340px !important;
+      background: rgba(11, 14, 23, 0.7) !important;
+      border-radius: 18px !important;
+      box-shadow: none !important;
+      margin-bottom: 0 !important;
+      object-fit: contain !important;
+      display: block !important;
     }
-    </script>
+
+    body {
+      background: #fff !important;
+      color: #222;
+    }
+
+    .navbar,
+    .bg-primary {
+      background: #0B0E17 !important;
+      box-shadow: none !important;
+    }
+
+    .navbar .nav-link,
+    .navbar-brand,
+    .navbar .navbar-toggler {
+      color: #f1f3f7 !important;
+    }
+
+    .hero-section {
+      background: linear-gradient(rgba(11, 14, 23, 0.75), rgba(15, 22, 38, 0.75)), url('Assets/images/contact-hero.jpg') center/cover no-repeat;
+      min-height: 60vh;
+      position: relative;
+    }
+
+    .hero-overlay {
+      background: rgba(11, 14, 23, 0.7) !important;
+    }
+
+    .logo-video-navbar {
+      max-width: 240px;
+      width: 200px;
+      height: 88px;
+      background: transparent !important;
+      margin-bottom: 0;
+      z-index: 3;
+      position: relative;
+      display: inline-block;
+      vertical-align: middle;
+      object-fit: contain;
+      border-radius: 0;
+      box-shadow: 0 4px 24px 0 rgba(0, 0, 0, 0.18);
+      mix-blend-mode: normal;
+      transition: height 0.2s, width 0.2s, box-shadow 0.2s;
+    }
+
+    .hero-section h1,
+    .hero-section p {
+      color: #fff !important;
+      text-shadow: 0 2px 16px #000;
+    }
+
+    .bg-light {
+      background: #fff !important;
+      color: #222 !important;
+    }
+
+    .bg-white {
+      background: #fff !important;
+      color: #222 !important;
+    }
+
+    .card,
+    .shadow-sm {
+      background: linear-gradient(180deg, rgba(15, 22, 38, 0.6), rgba(11, 14, 23, 0.6)) !important;
+      color: #f1f3f7 !important;
+    }
+
+    .btn-primary {
+      background: #00A3AD;
+      border: none;
+    }
+
+    .btn-primary:hover {
+      background: #008A95;
+    }
+
+    footer.bg-dark {
+      background: #fff !important;
+      color: #222 !important;
+      border-top: 1px solid #e5e5e5;
+    }
+  </style>
 </head>
-<body>
-    <!-- Header -->
-    <header>
-        <div class="header-container">
-            <div class="logo">
-                <h1>NASHCO GLOBAL</h1>
-                <span>Chemicals | Automotive | Manufacturing | Trading</span>
+
+<body data-bs-theme="dark">
+  <!-- Navbar (shared) -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html" style="padding-right:24px;">
+        <img src="Assets/images/logo-nashco.png" alt="Nashco" class="logo"
+          style="height:56px;max-height:72px;object-fit:contain;">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="zahy-alkhaleej.html">Zahy Al Khaleej LLC</a></li>
+          <li class="nav-item"><a class="nav-link" href="automotive.html">Automotive Industry</a></li>
+          <li class="nav-item"><a class="nav-link" href="manufacturing.html">Industrial Manufacturing</a></li>
+          <li class="nav-item"><a class="nav-link" href="trading.html">Trading Division</a></li>
+          <li class="nav-item"><a class="nav-link active" href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section - standardized plain image -->
+  <header class="site-hero">
+    <img src="Assets/images/contact-hero.jpg" alt="Contact Nashco Global" class="site-hero__img">
+  </header>
+
+  <!-- Contact Form & Info (Form first, then info, no map, no repeats) -->
+  <section class="py-5 bg-light">
+    <div class="container">
+      <div class="row g-5">
+        <div class="col-lg-7 mx-auto" data-aos="fade-up">
+          <h2 class="fw-bold mb-3">Get in Touch</h2>
+          <form action="https://formspree.io/f/mnqewqzv" method="POST" class="needs-validation" novalidate>
+            <div class="mb-3">
+              <label for="name" class="form-label">Name</label>
+              <input type="text" class="form-control" id="name" name="name" required aria-required="true">
+              <div class="invalid-feedback">Please enter your name.</div>
             </div>
-            <nav>
-                <ul>
-                    <li><a href="index.html" aria-label="Home page">Home</a></li>
-                    <li><a href="about.html" aria-label="About Nashco Global">About</a></li>
-                    <li><a href="chemicals.html" aria-label="Chemical solutions">Chemicals</a></li>
-                    <li><a href="automotive.html" aria-label="Automotive parts">Automotive</a></li>
-                    <li><a href="manufacturing.html" aria-label="Manufacturing automation">Manufacturing</a></li>
-                    <li><a href="trading.html" aria-label="Trading services">Trading</a></li>
-                    <li><a href="contact.html" class="active" aria-label="Contact us">Contact</a></li>
-                </ul>
-            </nav>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" class="form-control" id="email" name="email" required aria-required="true">
+              <div class="invalid-feedback">Please enter a valid email address.</div>
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label">Message</label>
+              <textarea class="form-control" id="message" name="message" rows="5" required
+                aria-required="true"></textarea>
+              <div class="invalid-feedback">Please enter your message.</div>
+            </div>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+            <input type="hidden" name="_replyto" value="info@nashcoglobal.com">
+          </form>
         </div>
-    </header>
-
-    <!-- Hero Section -->
-    <section class="hero">
-        <h1>Contact Nashco Global</h1>
-        <p>We're here to help with your business needs across chemicals, automotive, manufacturing, and trading</p>
-    </section>
-
-    <!-- Main Content -->
-    <main>
-        <div class="container">
-            <!-- Contact Info Boxes -->
-            <section>
-                <h2>Get in Touch</h2>
-                <div class="contact-info">
-                    <article class="info-box">
-                        <div class="info-box-icon" aria-hidden="true">📧</div>
-                        <h3>Email Us</h3>
-                        <p>info@nashcoglobal.com</p>
-                        <p>sales@nashcoglobal.com</p>
-                    </article>
-
-                    <article class="info-box">
-                        <div class="info-box-icon" aria-hidden="true">📞</div>
-                        <h3>Call Us</h3>
-                        <p>Main: +1 (555) 123-4567</p>
-                        <p>Sales: +1 (555) 123-4568</p>
-                    </article>
-
-                    <article class="info-box">
-                        <div class="info-box-icon" aria-hidden="true">🏢</div>
-                        <h3>Visit Us</h3>
-                        <p>Global Headquarters</p>
-                        <p>Available Worldwide</p>
-                    </article>
-
-                    <article class="info-box">
-                        <div class="info-box-icon" aria-hidden="true">🕐</div>
-                        <h3>Business Hours</h3>
-                        <p>Monday - Friday</p>
-                        <p>9:00 AM - 6:00 PM</p>
-                    </article>
-                </div>
-            </section>
-
-            <!-- Contact Form -->
-            <section>
-                <h2>Send Us a Message</h2>
-                <form class="contact-form" action="#" method="post" aria-label="Contact form">
-                    <div class="form-group">
-                        <label for="name">Full Name *</label>
-                        <input type="text" id="name" name="name" required aria-required="true" placeholder="Enter your full name">
-                    </div>
-
-                    <div class="form-group">
-                        <label for="email">Email Address *</label>
-                        <input type="email" id="email" name="email" required aria-required="true" placeholder="Enter your email address">
-                    </div>
-
-                    <div class="form-group">
-                        <label for="phone">Phone Number</label>
-                        <input type="tel" id="phone" name="phone" placeholder="Enter your phone number">
-                    </div>
-
-                    <div class="form-group">
-                        <label for="company">Company Name</label>
-                        <input type="text" id="company" name="company" placeholder="Enter your company name">
-                    </div>
-
-                    <div class="form-group">
-                        <label for="service">Service Interest *</label>
-                        <select id="service" name="service" required aria-required="true">
-                            <option value="">Select a service</option>
-                            <option value="chemicals">Chemicals</option>
-                            <option value="automotive">Automotive</option>
-                            <option value="manufacturing">Manufacturing Automation</option>
-                            <option value="trading">International Trading</option>
-                            <option value="general">General Inquiry</option>
-                        </select>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="subject">Subject *</label>
-                        <input type="text" id="subject" name="subject" required aria-required="true" placeholder="Enter subject">
-                    </div>
-
-                    <div class="form-group">
-                        <label for="message">Message *</label>
-                        <textarea id="message" name="message" required aria-required="true" placeholder="Tell us about your requirements or questions"></textarea>
-                    </div>
-
-                    <button type="submit" class="submit-button" aria-label="Submit contact form">Send Message</button>
-                </form>
-            </section>
-
-            <!-- Department Contact -->
-            <section>
-                <h2>Contact by Department</h2>
-                <div class="content-grid">
-                    <article class="content-item">
-                        <h3>Chemical Solutions</h3>
-                        <p>For inquiries about industrial and specialty chemicals, product specifications, and pricing.</p>
-                        <p><strong>Email:</strong> chemicals@nashcoglobal.com</p>
-                        <p><strong>Phone:</strong> +1 (555) 123-4571</p>
-                    </article>
-
-                    <article class="content-item">
-                        <h3>Automotive Parts</h3>
-                        <p>For automotive components, OEM parts, and aftermarket solutions inquiries and quotes.</p>
-                        <p><strong>Email:</strong> automotive@nashcoglobal.com</p>
-                        <p><strong>Phone:</strong> +1 (555) 123-4572</p>
-                    </article>
-
-                    <article class="content-item">
-                        <h3>Manufacturing Automation</h3>
-                        <p>For automation solutions, Industry 4.0 technologies, and robotics system consultations.</p>
-                        <p><strong>Email:</strong> automation@nashcoglobal.com</p>
-                        <p><strong>Phone:</strong> +1 (555) 123-4573</p>
-                    </article>
-
-                    <article class="content-item">
-                        <h3>Trading Services</h3>
-                        <p>For international trading, import/export services, and logistics coordination inquiries.</p>
-                        <p><strong>Email:</strong> trading@nashcoglobal.com</p>
-                        <p><strong>Phone:</strong> +1 (555) 123-4574</p>
-                    </article>
-
-                    <article class="content-item">
-                        <h3>Sales & Partnerships</h3>
-                        <p>For new business opportunities, partnerships, and strategic collaborations.</p>
-                        <p><strong>Email:</strong> sales@nashcoglobal.com</p>
-                        <p><strong>Phone:</strong> +1 (555) 123-4575</p>
-                    </article>
-
-                    <article class="content-item">
-                        <h3>Customer Support</h3>
-                        <p>For existing customer support, order tracking, and technical assistance.</p>
-                        <p><strong>Email:</strong> support@nashcoglobal.com</p>
-                        <p><strong>Phone:</strong> +1 (555) 123-4576</p>
-                    </article>
-                </div>
-            </section>
-
-            <!-- Regional Offices -->
-            <section class="stats">
-                <h2 style="color: white;">Global Presence</h2>
-                <div class="content-grid">
-                    <article class="content-item" style="background: white;">
-                        <h3>North America</h3>
-                        <p><strong>Region:</strong> USA & Canada</p>
-                        <p><strong>Email:</strong> americas@nashcoglobal.com</p>
-                        <p><strong>Phone:</strong> +1 (555) 123-4580</p>
-                    </article>
-
-                    <article class="content-item" style="background: white;">
-                        <h3>Europe</h3>
-                        <p><strong>Region:</strong> European Union</p>
-                        <p><strong>Email:</strong> europe@nashcoglobal.com</p>
-                        <p><strong>Phone:</strong> +44 (20) 1234-5678</p>
-                    </article>
-
-                    <article class="content-item" style="background: white;">
-                        <h3>Asia Pacific</h3>
-                        <p><strong>Region:</strong> Asia & Pacific Islands</p>
-                        <p><strong>Email:</strong> apac@nashcoglobal.com</p>
-                        <p><strong>Phone:</strong> +65 1234-5678</p>
-                    </article>
-
-                    <article class="content-item" style="background: white;">
-                        <h3>Middle East & Africa</h3>
-                        <p><strong>Region:</strong> MEA Region</p>
-                        <p><strong>Email:</strong> mea@nashcoglobal.com</p>
-                        <p><strong>Phone:</strong> +971 (4) 123-4567</p>
-                    </article>
-
-                    <article class="content-item" style="background: white;">
-                        <h3>Latin America</h3>
-                        <p><strong>Region:</strong> South & Central America</p>
-                        <p><strong>Email:</strong> latam@nashcoglobal.com</p>
-                        <p><strong>Phone:</strong> +55 (11) 1234-5678</p>
-                    </article>
-
-                    <article class="content-item" style="background: white;">
-                        <h3>Australia & Oceania</h3>
-                        <p><strong>Region:</strong> Australia & New Zealand</p>
-                        <p><strong>Email:</strong> oceania@nashcoglobal.com</p>
-                        <p><strong>Phone:</strong> +61 (2) 1234-5678</p>
-                    </article>
-                </div>
-            </section>
-
-            <!-- FAQ Section -->
-            <section>
-                <h2>Frequently Asked Questions</h2>
-                <div class="sector-cards">
-                    <article class="card">
-                        <h3>What is your typical response time?</h3>
-                        <p>We aim to respond to all inquiries within 24 hours during business days. Urgent matters are prioritized and handled immediately.</p>
-                    </article>
-
-                    <article class="card">
-                        <h3>Do you provide product samples?</h3>
-                        <p>Yes, we can provide samples for most of our chemical and automotive products. Contact the relevant department to discuss your sample requirements.</p>
-                    </article>
-
-                    <article class="card">
-                        <h3>What are your minimum order quantities?</h3>
-                        <p>Minimum order quantities vary by product and service. Please contact our sales team to discuss your specific requirements and quantities.</p>
-                    </article>
-
-                    <article class="card">
-                        <h3>Do you offer technical support?</h3>
-                        <p>Yes, we provide comprehensive technical support for all our products and services, including product specifications, application guidance, and troubleshooting.</p>
-                    </article>
-
-                    <article class="card">
-                        <h3>Can you handle international shipping?</h3>
-                        <p>Absolutely! We have extensive experience in international logistics and can arrange shipping to most countries worldwide with all necessary documentation.</p>
-                    </article>
-
-                    <article class="card">
-                        <h3>How do I become a supplier/partner?</h3>
-                        <p>We're always interested in working with quality suppliers and strategic partners. Please contact our sales and partnerships team with your proposal.</p>
-                    </article>
-                </div>
-            </section>
+        <div class="col-lg-6 mx-auto mt-5" data-aos="fade-up" data-aos-delay="100">
+          <div class="p-4 rounded-4 shadow-sm" style="background:#f5f6fa; border:1px solid #e5e5e5;">
+            <h2 class="fw-bold mb-3">Contact Details</h2>
+            <ul class="list-unstyled mb-4">
+              <li><strong>Address:</strong> 123 GCC Business Park, Muscat, Oman</li>
+              <li><strong>Phone:</strong> <a href="tel:+96894535053" class="text-info">+968 94535053</a></li>
+              <li><strong>Phone (UAE):</strong> <a href="tel:+971508536542" class="text-info">+971 508536542</a></li>
+              <li><strong>Email:</strong> <a href="mailto:info@nashcoglobal.com"
+                  class="text-info">info@nashcoglobal.com</a></li>
+            </ul>
+            <a href="https://wa.me/96894535053" target="_blank" class="btn btn-success mb-3 px-2 py-1"
+              style="display:inline-flex;align-items:center;gap:8px;">
+              <span style="display:inline-block;width:32px;height:32px;vertical-align:middle;">
+                <svg viewBox="0 0 32 32" width="32" height="32" xmlns="http://www.w3.org/2000/svg">
+                  <g>
+                    <circle fill="#25D366" cx="16" cy="16" r="16" />
+                    <path fill="#FFF"
+                      d="M24.5 20.6c-.4-.2-2.3-1.1-2.6-1.2-.3-.1-.5-.2-.7.2-.2.4-.7 1.2-.9 1.4-.2.2-.3.3-.7.1-.4-.2-1.5-.6-2.8-1.7-1-1-1.7-2.2-1.9-2.6-.2-.4 0-.6.2-.8.2-.2.4-.5.6-.7.2-.2.2-.4.3-.6.1-.2 0-.5 0-.7 0-.2-.7-1.7-1-2.3-.3-.6-.5-.5-.7-.5-.2 0-.4 0-.6 0-.2 0-.5.1-.7.3-.2.2-.9.9-.9 2.1 0 1.2.9 2.3 1 2.5.1.2 1.8 2.8 4.4 3.8.6.2 1.1.4 1.5.5.6.2 1.1.2 1.5.1.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2-.1-.1-.4-.2-.8-.4z" />
+                  </g>
+                </svg>
+              </span>
+            </a>
+          </div>
         </div>
-    </main>
+      </div>
+    </div>
+  </section>
 
-    <!-- Footer -->
-    <footer>
-        <div class="footer-container">
-            <div class="footer-section">
-                <h3>Nashco Global</h3>
-                <p>Your trusted partner for chemicals, automotive, manufacturing automation, and international trading solutions.</p>
-            </div>
-
-            <div class="footer-section">
-                <h3>Quick Links</h3>
-                <ul>
-                    <li><a href="index.html" aria-label="Home page">Home</a></li>
-                    <li><a href="about.html" aria-label="About us">About Us</a></li>
-                    <li><a href="contact.html" aria-label="Contact us">Contact</a></li>
-                </ul>
-            </div>
-
-            <div class="footer-section">
-                <h3>Our Services</h3>
-                <ul>
-                    <li><a href="chemicals.html" aria-label="Chemical solutions">Chemicals</a></li>
-                    <li><a href="automotive.html" aria-label="Automotive solutions">Automotive</a></li>
-                    <li><a href="manufacturing.html" aria-label="Manufacturing automation">Manufacturing</a></li>
-                    <li><a href="trading.html" aria-label="Trading services">Trading</a></li>
-                </ul>
-            </div>
-
-            <div class="footer-section">
-                <h3>Contact Info</h3>
-                <ul>
-                    <li>Email: info@nashcoglobal.com</li>
-                    <li>Phone: +1 (555) 123-4567</li>
-                    <li>Address: Global Operations</li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="footer-bottom">
-            <p>&copy; 2026 Nashco Global Chemicals. All rights reserved.</p>
-        </div>
-    </footer>
-</body>
-</html>
+  <!-- Footer (shared) -->
+  <footer class="bg-dark text-white py-4">
+    <div class="container text-center">
+      <p class="mt-2 mb-0">&copy; 2025 Nashco Global. All Rights Reserved.</p>
+    </div>
+  </footer>
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- GSAP and ScrollTrigger -->
+  <script src="https://unpkg.com/gsap@3/dist/gsap.min.js"></script>
+  <script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
+  <!-- AOS JS -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <!-- Swiper JS (optional) -->
+  <script src="https://unpkg.com/swiper@9/swiper-bundle.min.js"></script>
+  <script>
+    // Bootstrap form validation
+    (() => {
+      'use strict';
+      const forms = document.querySelectorAll('.needs-validation');
+      Array.from(forms).forEach(form => {
+        form.addEventListener('submit', event => {
+          if (!form.checkValidity()) {
+            event.preventDefault();
+            event.stopPropagation();
+          }
+          form.classList.add('was-validated');
+        }, false);
+      });
+    })();
+    AOS.init({ once: true, duration: 900, offset: 60 });
+    gsap.from('.hero-section h1', { opacity: 0, y: 60, duration: 1, delay: 0.2 });
+    gsap.from('.hero-section p', { opacity: 0, y: 40, duration: 1, delay: 0.5 });
+  </script>

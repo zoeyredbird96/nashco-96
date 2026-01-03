@@ -1,358 +1,520 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Nashco Global Manufacturing Automation Solutions - Complete automation systems, Industry 4.0 technologies, robotics, and smart factory solutions for modern manufacturing excellence.">
-    <meta name="keywords" content="manufacturing automation, industrial automation, Industry 4.0, robotics, smart factory, automation solutions, manufacturing systems, production automation, PLC systems">
-    <meta name="author" content="Nashco Global Chemicals">
-    <title>Manufacturing Automation Solutions - Nashco Global | Industry 4.0 & Smart Factory Systems</title>
-    <link rel="stylesheet" href="styles.css">
-    
-    <!-- JSON-LD Organization Schema -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "Organization",
-        "name": "Nashco Global Chemicals",
-        "url": "https://nashcoglobal.com",
-        "logo": "https://nashcoglobal.com/logo.png",
-        "description": "Leading provider of chemical solutions, automotive parts, complete automation manufacturing solutions, and international trading services.",
-        "address": {
-            "@type": "PostalAddress",
-            "addressCountry": "Global"
-        },
-        "contactPoint": {
-            "@type": "ContactPoint",
-            "contactType": "Customer Service",
-            "availableLanguage": ["English"]
-        },
-        "sameAs": [
-            "https://www.linkedin.com/company/nashco-global",
-            "https://twitter.com/nashcoglobal"
-        ]
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nashco Global - Industrial Manufacturing</title>
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#0B0E17">
+  <link rel="apple-touch-icon" href="Assets/images/logo-nashco.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="Assets/css/styles.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper@9/swiper-bundle.min.css">
+  <style>
+    /* Manufacturing page: ensure readability on light sections without changing layout */
+    .manufacturing-page .bg-light h1,
+    .manufacturing-page .bg-light h2,
+    .manufacturing-page .bg-light h3,
+    .manufacturing-page .bg-light h4,
+    .manufacturing-page .bg-light h5,
+    .manufacturing-page .bg-light p,
+    .manufacturing-page .bg-light .lead,
+    .manufacturing-page .gallery-section h2,
+    .manufacturing-page .gallery-section p,
+    .manufacturing-page .stock-gallery p {
+      color: #222 !important;
     }
-    </script>
+
+    .manufacturing-page .bg-light {
+      color: #222 !important;
+    }
+
+    /* Ensure white cards/text inside the Process section are readable */
+    .manufacturing-page .bg-white h1,
+    .manufacturing-page .bg-white h2,
+    .manufacturing-page .bg-white h3,
+    .manufacturing-page .bg-white h4,
+    .manufacturing-page .bg-white h5,
+    .manufacturing-page .bg-white h6,
+    .manufacturing-page .bg-white p,
+    .manufacturing-page .bg-white .lead,
+    .manufacturing-page .bg-white .fw-bold,
+    .manufacturing-page .bg-white .text-muted {
+      color: #222 !important;
+    }
+
+    /* Small-display variant for subheading product images (reduced on-page size, enlarge in modal) */
+    .manufacturing-page .myGallerySwiper.small-display .swiper-slide {
+      width: auto !important;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .manufacturing-page .myGallerySwiper.small-display .swiper-wrapper {
+      justify-content: flex-start !important;
+      align-items: center;
+    }
+
+    .manufacturing-page .myGallerySwiper.small-display .swiper-slide img {
+      max-height: 140px;
+      width: auto;
+      object-fit: contain;
+    }
+  </style>
 </head>
-<body>
-    <!-- Header -->
-    <header>
-        <div class="header-container">
-            <div class="logo">
-                <h1>NASHCO GLOBAL</h1>
-                <span>Chemicals | Automotive | Manufacturing | Trading</span>
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="index.html" aria-label="Home page">Home</a></li>
-                    <li><a href="about.html" aria-label="About Nashco Global">About</a></li>
-                    <li><a href="chemicals.html" aria-label="Chemical solutions">Chemicals</a></li>
-                    <li><a href="automotive.html" aria-label="Automotive parts">Automotive</a></li>
-                    <li><a href="manufacturing.html" class="active" aria-label="Manufacturing automation">Manufacturing</a></li>
-                    <li><a href="trading.html" aria-label="Trading services">Trading</a></li>
-                    <li><a href="contact.html" aria-label="Contact us">Contact</a></li>
-                </ul>
-            </nav>
+
+<body data-bs-theme="dark" class="manufacturing-page">
+  <!-- Navbar (shared) -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="Assets/images/logo-nashco.png" alt="Nashco Global"
+          style="height:56px;max-height:72px;object-fit:contain;">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="zahy-alkhaleej.html">Zahy Al Khaleej LLC</a></li>
+          <li class="nav-item"><a class="nav-link" href="automotive.html">Automotive Industry</a></li>
+          <li class="nav-item"><a class="nav-link active" href="manufacturing.html">Industrial Manufacturing</a></li>
+          <li class="nav-item"><a class="nav-link" href="trading.html">Trading Division</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Hero Section - standardized plain image -->
+  <header class="site-hero">
+    <img src="Assets/images/manufacturing-hero.jpg" alt="Industrial Manufacturing" class="site-hero__img">
+  </header>
+  <!-- Overview & Capabilities -->
+  <section class="py-5 bg-light">
+    <div class="container">
+      <div class="row mb-4" data-aos="fade-up">
+        <div class="col text-center">
+          <h2 class="fw-bold mb-3">Our Manufacturing Excellence</h2>
+          <p class="fs-5 text-muted mb-0">Nashco Global’s Industrial Manufacturing division specializes in high-quality
+            plastic injection moulding, delivering durable and compliant products for automotive, construction, and
+            consumer industries across the GCC. Our facilities in Oman and UAE are equipped with modern machinery,
+            ensuring efficiency, sustainability, and audit-ready production processes. We prioritize eco-friendly
+            materials and recycling initiatives to reduce environmental impact.</p>
         </div>
-    </header>
+      </div>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <h1>Manufacturing Automation Solutions</h1>
-        <p>Complete automation systems and Industry 4.0 technologies for modern production excellence</p>
-        <a href="contact.html" class="cta-button" aria-label="Request automation consultation">Schedule Consultation</a>
-    </section>
-
-    <!-- Main Content -->
-    <main>
-        <div class="container">
-            <!-- Overview Section -->
-            <section>
-                <h2>Complete Manufacturing Automation Solutions</h2>
-                <p style="text-align: center; max-width: 800px; margin: 0 auto 3rem; font-size: 1.1rem; color: var(--text-light);">
-                    Nashco Global delivers comprehensive automation solutions designed to transform traditional manufacturing into smart, efficient, and highly productive operations. From concept to implementation and ongoing support, we provide end-to-end automation expertise.
-                </p>
-
-                <div class="sector-cards">
-                    <article class="card">
-                        <div class="card-icon" aria-hidden="true">🤖</div>
-                        <h3>Industrial Robotics</h3>
-                        <p>Advanced robotic systems for assembly, welding, material handling, and packaging operations with precision and reliability.</p>
-                    </article>
-
-                    <article class="card">
-                        <div class="card-icon" aria-hidden="true">🏭</div>
-                        <h3>Smart Factory Systems</h3>
-                        <p>Integrated Industry 4.0 solutions connecting machines, data, and processes for intelligent manufacturing operations.</p>
-                    </article>
-
-                    <article class="card">
-                        <div class="card-icon" aria-hidden="true">⚡</div>
-                        <h3>Process Automation</h3>
-                        <p>Comprehensive control systems, PLCs, SCADA, and HMI solutions for complete process control and monitoring.</p>
-                    </article>
-                </div>
-            </section>
-
-            <!-- Automation Solutions -->
-            <section>
-                <h2>Automation Technology Solutions</h2>
-                <div class="content-grid">
-                    <article class="content-item">
-                        <h3>Industrial Robotics</h3>
-                        <ul>
-                            <li>Articulated robots</li>
-                            <li>Collaborative robots (Cobots)</li>
-                            <li>SCARA robots</li>
-                            <li>Delta robots</li>
-                            <li>AGVs and AMRs</li>
-                            <li>Robot programming and integration</li>
-                        </ul>
-                    </article>
-
-                    <article class="content-item">
-                        <h3>Control Systems</h3>
-                        <ul>
-                            <li>PLC programming and installation</li>
-                            <li>DCS (Distributed Control Systems)</li>
-                            <li>SCADA systems</li>
-                            <li>HMI development</li>
-                            <li>Motion control systems</li>
-                            <li>Safety control systems</li>
-                        </ul>
-                    </article>
-
-                    <article class="content-item">
-                        <h3>Vision & Sensing</h3>
-                        <ul>
-                            <li>Machine vision systems</li>
-                            <li>Quality inspection automation</li>
-                            <li>Barcode and RFID systems</li>
-                            <li>3D scanning solutions</li>
-                            <li>Sensor integration</li>
-                            <li>Measurement systems</li>
-                        </ul>
-                    </article>
-
-                    <article class="content-item">
-                        <h3>Material Handling</h3>
-                        <ul>
-                            <li>Conveyor systems</li>
-                            <li>Automated storage systems</li>
-                            <li>Picking and sorting automation</li>
-                            <li>Palletizing systems</li>
-                            <li>Transfer systems</li>
-                            <li>Loading/unloading automation</li>
-                        </ul>
-                    </article>
-
-                    <article class="content-item">
-                        <h3>Industry 4.0 Technologies</h3>
-                        <ul>
-                            <li>IoT integration</li>
-                            <li>Cloud connectivity</li>
-                            <li>Big data analytics</li>
-                            <li>Predictive maintenance</li>
-                            <li>Digital twin technology</li>
-                            <li>AI and machine learning</li>
-                        </ul>
-                    </article>
-
-                    <article class="content-item">
-                        <h3>Manufacturing Execution</h3>
-                        <ul>
-                            <li>MES (Manufacturing Execution Systems)</li>
-                            <li>Production scheduling</li>
-                            <li>Quality management systems</li>
-                            <li>Traceability solutions</li>
-                            <li>OEE monitoring</li>
-                            <li>Workflow optimization</li>
-                        </ul>
-                    </article>
-                </div>
-            </section>
-
-            <!-- Industry Applications -->
-            <section class="stats">
-                <h2 style="color: white;">Manufacturing Sectors We Serve</h2>
-                <div class="content-grid">
-                    <article class="content-item" style="background: white;">
-                        <h3>Automotive Manufacturing</h3>
-                        <p>Complete automation for vehicle assembly, body welding, painting, and final assembly lines with high precision and productivity.</p>
-                    </article>
-
-                    <article class="content-item" style="background: white;">
-                        <h3>Electronics Assembly</h3>
-                        <p>Precision automation for PCB assembly, component placement, testing, and packaging of electronic products and devices.</p>
-                    </article>
-
-                    <article class="content-item" style="background: white;">
-                        <h3>Food & Beverage</h3>
-                        <p>Hygienic automation solutions for food processing, packaging, labeling, and material handling with full regulatory compliance.</p>
-                    </article>
-
-                    <article class="content-item" style="background: white;">
-                        <h3>Pharmaceutical Production</h3>
-                        <p>GMP-compliant automation for pharmaceutical manufacturing, packaging, and quality control with validation documentation.</p>
-                    </article>
-
-                    <article class="content-item" style="background: white;">
-                        <h3>Metal Fabrication</h3>
-                        <p>Automated cutting, bending, welding, and finishing systems for sheet metal and structural steel fabrication operations.</p>
-                    </article>
-
-                    <article class="content-item" style="background: white;">
-                        <h3>Plastics & Rubber</h3>
-                        <p>Automation for injection molding, extrusion, thermoforming, and secondary operations in plastics manufacturing.</p>
-                    </article>
-                </div>
-            </section>
-
-            <!-- Benefits Section -->
-            <section>
-                <h2>Automation Benefits & Advantages</h2>
-                <div class="sector-cards">
-                    <article class="card">
-                        <div class="card-icon" aria-hidden="true">📈</div>
-                        <h3>Increased Productivity</h3>
-                        <p>Automation increases production output by 30-50%, reduces cycle times, and enables 24/7 operation for maximum efficiency.</p>
-                    </article>
-
-                    <article class="card">
-                        <div class="card-icon" aria-hidden="true">✓</div>
-                        <h3>Enhanced Quality</h3>
-                        <p>Consistent precision and repeatability eliminate human error, reduce defects, and ensure uniform product quality standards.</p>
-                    </article>
-
-                    <article class="card">
-                        <div class="card-icon" aria-hidden="true">💰</div>
-                        <h3>Cost Reduction</h3>
-                        <p>Lower labor costs, reduced waste, minimized rework, and optimized resource utilization lead to significant cost savings.</p>
-                    </article>
-
-                    <article class="card">
-                        <div class="card-icon" aria-hidden="true">🔒</div>
-                        <h3>Improved Safety</h3>
-                        <p>Automation removes workers from hazardous tasks, reduces workplace accidents, and creates safer working environments.</p>
-                    </article>
-
-                    <article class="card">
-                        <div class="card-icon" aria-hidden="true">📊</div>
-                        <h3>Real-Time Data</h3>
-                        <p>Comprehensive data collection and analytics provide insights for continuous improvement and informed decision-making.</p>
-                    </article>
-
-                    <article class="card">
-                        <div class="card-icon" aria-hidden="true">🔄</div>
-                        <h3>Flexibility</h3>
-                        <p>Modern automation systems adapt quickly to product changes, enabling agile manufacturing and rapid response to market demands.</p>
-                    </article>
-                </div>
-            </section>
-
-            <!-- Implementation Process -->
-            <section>
-                <h2>Our Automation Implementation Process</h2>
-                <div class="content-grid">
-                    <article class="content-item">
-                        <h3>Phase 1: Assessment & Planning</h3>
-                        <ul>
-                            <li>Current process analysis</li>
-                            <li>Automation feasibility study</li>
-                            <li>ROI calculation</li>
-                            <li>Technology selection</li>
-                            <li>Project timeline and budget</li>
-                        </ul>
-                    </article>
-
-                    <article class="content-item">
-                        <h3>Phase 2: Design & Engineering</h3>
-                        <ul>
-                            <li>Detailed system design</li>
-                            <li>3D modeling and simulation</li>
-                            <li>Control system architecture</li>
-                            <li>Safety system design</li>
-                            <li>Documentation preparation</li>
-                        </ul>
-                    </article>
-
-                    <article class="content-item">
-                        <h3>Phase 3: Implementation</h3>
-                        <ul>
-                            <li>Equipment procurement</li>
-                            <li>System installation</li>
-                            <li>Programming and integration</li>
-                            <li>Testing and commissioning</li>
-                            <li>Operator training</li>
-                        </ul>
-                    </article>
-
-                    <article class="content-item">
-                        <h3>Phase 4: Support & Optimization</h3>
-                        <ul>
-                            <li>Ongoing technical support</li>
-                            <li>Preventive maintenance</li>
-                            <li>Performance monitoring</li>
-                            <li>System upgrades</li>
-                            <li>Continuous improvement</li>
-                        </ul>
-                    </article>
-                </div>
-            </section>
-
-            <!-- Call to Action -->
-            <section>
-                <h2>Transform Your Manufacturing Operations</h2>
-                <p style="text-align: center; max-width: 700px; margin: 0 auto 2rem; font-size: 1.1rem;">
-                    Ready to take your manufacturing to the next level? Our automation experts will work with you to design and implement the perfect solution for your production needs.
-                </p>
-                <div style="text-align: center;">
-                    <a href="contact.html" class="cta-button" aria-label="Contact automation experts">Contact Automation Team</a>
-                </div>
-            </section>
+      <div class="row mb-4" data-aos="fade-up">
+        <div class="col text-center">
+          <h2 class="fw-bold mb-3">Our Capabilities</h2>
+          <p class="text-muted">Nashco Global delivers advanced manufacturing solutions, leveraging innovation,
+            technology, and expertise to serve the GCC region.</p>
         </div>
-    </main>
-
-    <!-- Footer -->
-    <footer>
-        <div class="footer-container">
-            <div class="footer-section">
-                <h3>Nashco Global</h3>
-                <p>Your trusted partner for chemicals, automotive, manufacturing automation, and international trading solutions.</p>
-            </div>
-
-            <div class="footer-section">
-                <h3>Quick Links</h3>
-                <ul>
-                    <li><a href="index.html" aria-label="Home page">Home</a></li>
-                    <li><a href="about.html" aria-label="About us">About Us</a></li>
-                    <li><a href="contact.html" aria-label="Contact us">Contact</a></li>
-                </ul>
-            </div>
-
-            <div class="footer-section">
-                <h3>Our Services</h3>
-                <ul>
-                    <li><a href="chemicals.html" aria-label="Chemical solutions">Chemicals</a></li>
-                    <li><a href="automotive.html" aria-label="Automotive solutions">Automotive</a></li>
-                    <li><a href="manufacturing.html" aria-label="Manufacturing automation">Manufacturing</a></li>
-                    <li><a href="trading.html" aria-label="Trading services">Trading</a></li>
-                </ul>
-            </div>
-
-            <div class="footer-section">
-                <h3>Contact Info</h3>
-                <ul>
-                    <li>Email: info@nashcoglobal.com</li>
-                    <li>Phone: +1 (555) 123-4567</li>
-                    <li>Address: Global Operations</li>
-                </ul>
-            </div>
+      </div>
+    </div>
+    <div class="row g-4 text-center" data-aos="fade-up" data-aos-delay="100">
+      <div class="col-md-4">
+        <div class="p-4 bg-white rounded shadow-sm h-100">
+          <svg width="40" height="40" fill="none" viewBox="0 0 48 48" aria-hidden="true" class="mb-2">
+            <rect x="10" y="10" width="28" height="28" rx="6" fill="#198754" />
+            <path d="M18 30h12M18 26h12M18 22h12" stroke="#fff" stroke-width="2.5" stroke-linecap="round" />
+          </svg>
+          <h6 class="fw-bold">Process Engineering</h6>
+          <p class="mb-0">Optimized processes for efficiency and quality.</p>
         </div>
-
-        <div class="footer-bottom">
-            <p>&copy; 2026 Nashco Global Chemicals. All rights reserved.</p>
+      </div>
+      <div class="col-md-4">
+        <div class="p-4 bg-white rounded shadow-sm h-100">
+          <svg width="40" height="40" fill="none" viewBox="0 0 48 48" aria-hidden="true" class="mb-2">
+            <rect x="8" y="8" width="32" height="32" rx="8" fill="#0dcaf0" />
+            <path d="M24 16v16M16 24h16" stroke="#fff" stroke-width="3" stroke-linecap="round" />
+          </svg>
+          <h6 class="fw-bold">Automation</h6>
+          <p class="mb-0">Cutting-edge automation for modern manufacturing.</p>
         </div>
-    </footer>
+      </div>
+      <div class="col-md-4">
+        <div class="p-4 bg-white rounded shadow-sm h-100">
+          <svg width="40" height="40" fill="none" viewBox="0 0 48 48" aria-hidden="true" class="mb-2">
+            <rect x="8" y="8" width="32" height="32" rx="8" fill="#fd7e14" />
+            <path d="M16 32l8-16 8 16" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+          <h6 class="fw-bold">Quality Assurance</h6>
+          <p class="mb-0">Relentless focus on quality and compliance.</p>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+  <!-- Process Flow/Steps -->
+  <section class="py-5">
+    <div class="container">
+      <div class="row mb-4" data-aos="fade-up">
+        <div class="col text-center">
+          <h2 class="fw-bold mb-3">Our Process</h2>
+        </div>
+      </div>
+      <div class="row g-4 justify-content-center align-items-center">
+        <div class="col-md-3" data-aos="fade-up" data-aos-delay="100">
+          <div class="bg-white rounded shadow-sm p-4 h-100 text-center">
+            <h6 class="fw-bold mb-2">Consult</h6>
+            <p class="mb-0">Understanding client needs and challenges.</p>
+          </div>
+        </div>
+        <div class="col-md-3" data-aos="fade-up" data-aos-delay="200">
+          <div class="bg-white rounded shadow-sm p-4 h-100 text-center">
+            <h6 class="fw-bold mb-2">Engineer</h6>
+            <p class="mb-0">Designing tailored manufacturing solutions.</p>
+          </div>
+        </div>
+        <div class="col-md-3" data-aos="fade-up" data-aos-delay="300">
+          <div class="bg-white rounded shadow-sm p-4 h-100 text-center">
+            <h6 class="fw-bold mb-2">Deliver</h6>
+            <p class="mb-0">Implementing and supporting for long-term success.</p>
+          </div>
+        </div>
+      </div>
+      <div class="row mt-5">
+        <div class="col text-center">
+          <a href="contact.html" class="btn btn-primary btn-lg mt-3">Request a Consultation</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Gallery -->
+  <section class="py-5 bg-light gallery-section">
+    <div class="container">
+      <div class="row mb-4" data-aos="fade-up">
+        <div class="col text-center">
+          <h2 class="fw-bold mb-3">Products</h2>
+          <p class="fs-5 text-muted mb-0">A curated selection of our manufacturing products and components.</p>
+        </div>
+      </div>
+      <div class="row mb-3" data-aos="fade-up">
+        <div class="col text-start">
+          <h3 class="fw-semibold mt-3 h5">Medical Biohazard Containers</h3>
+          <p class="text-muted mb-3 small">Medical bio hazard disposable containers MOH and W.H.O approved novel design
+          </p>
+        </div>
+      </div>
+      <div class="row mb-4" data-aos="fade-up" data-aos-delay="80">
+        <div class="col-12">
+          <div class="swiper myGallerySwiper small-display">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img src="Assets/images/Manufacturing-products-Biohazard1.jpg" alt="Biohazard 1"
+                  class="img-fluid rounded gallery-thumb" loading="lazy"></div>
+              <div class="swiper-slide"><img src="Assets/images/Manufacturing-products-Biohazard2.jpg" alt="Biohazard 2"
+                  class="img-fluid rounded gallery-thumb" loading="lazy"></div>
+              <div class="swiper-slide"><img src="Assets/images/Manufacturing-products-Biohazard3.jpg" alt="Biohazard 3"
+                  class="img-fluid rounded gallery-thumb" loading="lazy"></div>
+              <div class="swiper-slide"><img src="Assets/images/Manufacturing-products-Biohazard4.jpg" alt="Biohazard 4"
+                  class="img-fluid rounded gallery-thumb" loading="lazy"></div>
+              <div class="swiper-slide"><img src="Assets/images/Manufacturing-products-Biohazard6.jpg" alt="Biohazard 6"
+                  class="img-fluid rounded gallery-thumb" loading="lazy"></div>
+              <div class="swiper-slide"><img src="Assets/images/Manufacturing-products-Biohazard7.jpg" alt="Biohazard 7"
+                  class="img-fluid rounded gallery-thumb" loading="lazy"></div>
+              <div class="swiper-slide"><img src="Assets/images/Manufacturing-products-Biohazard8.jpg" alt="Biohazard 8"
+                  class="img-fluid rounded gallery-thumb" loading="lazy"></div>
+              <div class="swiper-slide"><img src="Assets/images/Manufacturing-products-Biohazard9.jpg" alt="Biohazard 9"
+                  class="img-fluid rounded gallery-thumb" loading="lazy"></div>
+              <div class="swiper-slide"><img src="Assets/images/Manufacturing-products-Biohazard10.jpg"
+                  alt="Biohazard 10" class="img-fluid rounded gallery-thumb" loading="lazy"></div>
+              <div class="swiper-slide"><img src="Assets/images/Manufacturing-products-Biohazard11.jpg"
+                  alt="Biohazard 11" class="img-fluid rounded gallery-thumb" loading="lazy"></div>
+            </div>
+            <div class="swiper-button-prev" aria-label="Previous slide">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true">
+                <path d="M15 18l-6-6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </div>
+            <div class="swiper-button-next" aria-label="Next slide">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true">
+                <path d="M9 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </div>
+            <div class="swiper-pagination"></div>
+            <button class="custom-gallery-nav custom-nav-prev" aria-label="Gallery previous">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true">
+                <path d="M15 18l-6-6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </button>
+            <button class="custom-gallery-nav custom-nav-next" aria-label="Gallery next">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true">
+                <path d="M9 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="row mb-3" data-aos="fade-up">
+        <div class="col text-start">
+          <h3 class="fw-semibold mt-3 h5">Plastic Containers</h3>
+          <p class="text-muted mb-3 small">Disposable plastic containers of various dimensions</p>
+        </div>
+      </div>
+
+      <div class="row mb-4" data-aos="fade-up" data-aos-delay="90">
+        <div class="col-12">
+          <div class="swiper myGallerySwiper small-display">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img src="Assets/images/Manufacturing-products-container1.JPG" alt="Container 1"
+                  class="img-fluid rounded gallery-thumb" loading="lazy"></div>
+              <div class="swiper-slide"><img src="Assets/images/Manufacturing-products-container2.JPG" alt="Container 2"
+                  class="img-fluid rounded gallery-thumb" loading="lazy"></div>
+              <div class="swiper-slide"><img src="Assets/images/Manufacturing-products-container3.JPG" alt="Container 3"
+                  class="img-fluid rounded gallery-thumb" loading="lazy"></div>
+              <div class="swiper-slide"><img src="Assets/images/Manufacturing-products-container4.JPG" alt="Container 4"
+                  class="img-fluid rounded gallery-thumb" loading="lazy"></div>
+              <div class="swiper-slide"><img src="Assets/images/Manufacturing-products-container5.JPG" alt="Container 5"
+                  class="img-fluid rounded gallery-thumb" loading="lazy"></div>
+              <div class="swiper-slide"><img src="Assets/images/Manufacturing-products-container6.JPG" alt="Container 6"
+                  class="img-fluid rounded gallery-thumb" loading="lazy"></div>
+              <div class="swiper-slide"><img src="Assets/images/Manufacturing-products-container7.JPG" alt="Container 7"
+                  class="img-fluid rounded gallery-thumb" loading="lazy"></div>
+              <div class="swiper-slide"><img src="Assets/images/Manufacturing-products-container8.JPG" alt="Container 8"
+                  class="img-fluid rounded gallery-thumb" loading="lazy"></div>
+              <div class="swiper-slide"><img src="Assets/images/Manufacturing-products-container9.JPG" alt="Container 9"
+                  class="img-fluid rounded gallery-thumb" loading="lazy"></div>
+              <div class="swiper-slide"><img src="Assets/images/Manufacturing-products-container10.JPG"
+                  alt="Container 10" class="img-fluid rounded gallery-thumb" loading="lazy"></div>
+            </div>
+            <div class="swiper-button-prev" aria-label="Previous slide">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true">
+                <path d="M15 18l-6-6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </div>
+            <div class="swiper-button-next" aria-label="Next slide">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true">
+                <path d="M9 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </div>
+            <div class="swiper-pagination"></div>
+            <button class="custom-gallery-nav custom-nav-prev" aria-label="Gallery previous">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true">
+                <path d="M15 18l-6-6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </button>
+            <button class="custom-gallery-nav custom-nav-next" aria-label="Gallery next">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true">
+                <path d="M9 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="row mt-4" data-aos="fade-up">
+        <div class="col text-center">
+          <h2 class="fw-bold mb-2">Gallery</h2>
+          <div class="d-flex justify-content-center mb-3">
+            <span class="badge rounded-pill bg-white text-dark px-3 py-2 shadow-sm">Swipe to see more →</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="row" data-aos="fade-up" data-aos-delay="100">
+        <div class="col-12">
+          <!-- Swiper Gallery -->
+          <div class="swiper myGallerySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img src="Assets/images/Manufacturing-machines1.jpg" alt="Machine 1"
+                  class="img-fluid gallery-thumb" loading="lazy"></div>
+              <div class="swiper-slide"><img src="Assets/images/Manufacturing-machines2.jpg" alt="Machine 2"
+                  class="img-fluid gallery-thumb" loading="lazy"></div>
+              <div class="swiper-slide"><img src="Assets/images/Manufacturing-machines3.jpg" alt="Machine 3"
+                  class="img-fluid gallery-thumb" loading="lazy"></div>
+              <div class="swiper-slide"><img src="Assets/images/Manufacturing-machines4.jpg" alt="Machine 4"
+                  class="img-fluid gallery-thumb" loading="lazy"></div>
+              <div class="swiper-slide"><img src="Assets/images/Manufacturing-machines5.jpg" alt="Machine 5"
+                  class="img-fluid gallery-thumb" loading="lazy"></div>
+              <div class="swiper-slide"><img src="Assets/images/Manufacturing-machines6.jpg" alt="Machine 6"
+                  class="img-fluid gallery-thumb" loading="lazy"></div>
+              <div class="swiper-slide"><img src="Assets/images/Manufacturing-machines7.jpg" alt="Machine 7"
+                  class="img-fluid gallery-thumb" loading="lazy"></div>
+              <div class="swiper-slide"><img src="Assets/images/Manufacturing-machines8.jpg" alt="Machine 8"
+                  class="img-fluid gallery-thumb" loading="lazy"></div>
+              <div class="swiper-slide"><img src="Assets/images/Manufacturing-machines9.jpg" alt="Machine 9"
+                  class="img-fluid gallery-thumb" loading="lazy"></div>
+              <div class="swiper-slide"><img src="Assets/images/Manufacturing-machines10.jpg" alt="Machine 10"
+                  class="img-fluid gallery-thumb" loading="lazy"></div>
+              <div class="swiper-slide"><img src="Assets/images/Manufacturing-machines11.jpg" alt="Machine 11"
+                  class="img-fluid gallery-thumb" loading="lazy"></div>
+              <div class="swiper-slide"><img src="Assets/images/Manufacturing-machines12.jpg" alt="Machine 12"
+                  class="img-fluid gallery-thumb" loading="lazy"></div>
+            </div>
+            <!-- navigation -->
+            <div class="swiper-button-prev" aria-label="Previous slide">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true">
+                <path d="M15 18l-6-6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </div>
+            <div class="swiper-button-next" aria-label="Next slide">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true">
+                <path d="M9 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </div>
+            <div class="swiper-pagination"></div>
+            <button class="custom-gallery-nav custom-nav-prev" aria-label="Gallery previous">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true">
+                <path d="M15 18l-6-6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </button>
+            <button class="custom-gallery-nav custom-nav-next" aria-label="Gallery next">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true">
+                <path d="M9 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Footer (shared) -->
+  <footer class="bg-dark text-white py-4">
+    <div class="container text-center">
+      <!-- licensed-by image removed from footer -->
+      <p>&copy; 2025 Nashco Global. All Rights Reserved.</p>
+    </div>
+  </footer>
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- GSAP and ScrollTrigger -->
+  <script src="https://unpkg.com/gsap@3/dist/gsap.min.js"></script>
+  <script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
+  <!-- AOS JS -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <!-- Swiper JS (optional) -->
+  <script src="https://unpkg.com/swiper@9/swiper-bundle.min.js"></script>
+  <!-- Gallery Modal (Bootstrap) -->
+  <div class="modal fade" id="galleryModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content bg-transparent border-0">
+        <div class="modal-body p-0 text-center">
+          <img id="galleryModalImg" src="" alt="" class="img-fluid rounded">
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Gallery: initialize Swiper and modal behavior -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      try {
+        const swiperOptions = {
+          slidesPerView: 3,
+          spaceBetween: 20,
+          grabCursor: true,
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          },
+          pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+          },
+          breakpoints: {
+            0: { slidesPerView: 1 },
+            600: { slidesPerView: 2 },
+            992: { slidesPerView: 3 }
+          }
+        };
+
+        const swiperInstances = [];
+        document.querySelectorAll('.myGallerySwiper').forEach((el) => {
+          const baseOpts = el.classList.contains('small-display') ? Object.assign({}, swiperOptions, { slidesPerView: 'auto', spaceBetween: 12 }) : Object.assign({}, swiperOptions);
+          baseOpts.navigation = {
+            nextEl: el.querySelector('.swiper-button-next'),
+            prevEl: el.querySelector('.swiper-button-prev')
+          };
+          baseOpts.pagination = {
+            el: el.querySelector('.swiper-pagination'),
+            clickable: true
+          };
+          const instance = new Swiper(el, baseOpts);
+          swiperInstances.push(instance);
+
+          (function attachCustomGalleryNav(swiperEl, swiperInstance) {
+            const leftBtn = swiperEl.querySelector('.custom-nav-prev');
+            const rightBtn = swiperEl.querySelector('.custom-nav-next');
+            if (!leftBtn || !rightBtn) return;
+
+            function positionButtons() {
+              const slides = swiperEl.querySelectorAll('.swiper-slide');
+              if (!slides.length) return;
+              const first = slides[0];
+              const third = slides[2] || slides[slides.length - 1];
+              const sRect = swiperEl.getBoundingClientRect();
+              const fRect = first.getBoundingClientRect();
+              const tRect = third.getBoundingClientRect();
+              const btnW = leftBtn.offsetWidth || 56;
+              const btnH = leftBtn.offsetHeight || 56;
+
+              leftBtn.style.position = 'absolute';
+              leftBtn.style.top = (fRect.top - sRect.top + fRect.height / 2 - btnH / 2) + 'px';
+              leftBtn.style.left = Math.max(8, (fRect.left - sRect.left - btnW - 8)) + 'px';
+
+              rightBtn.style.position = 'absolute';
+              rightBtn.style.top = (tRect.top - sRect.top + tRect.height / 2 - btnH / 2) + 'px';
+              rightBtn.style.left = Math.min(sRect.width - btnW - 8, (tRect.right - sRect.left + 8)) + 'px';
+            }
+
+            leftBtn.addEventListener('click', function (e) { e.stopPropagation(); swiperInstance.slidePrev(); });
+            rightBtn.addEventListener('click', function (e) { e.stopPropagation(); swiperInstance.slideNext(); });
+
+            window.addEventListener('resize', positionButtons, { passive: true });
+            swiperInstance.on && swiperInstance.on('resize', positionButtons);
+            swiperInstance.on && swiperInstance.on('update', positionButtons);
+
+            setTimeout(positionButtons, 250);
+          })(el, instance);
+        });
+
+        document.querySelectorAll('.gallery-thumb').forEach(img => {
+          img.addEventListener('click', function (e) {
+            const modalImg = document.getElementById('galleryModalImg');
+            modalImg.src = this.src;
+            const bsModal = new bootstrap.Modal(document.getElementById('galleryModal'));
+            bsModal.show();
+          });
+        });
+      } catch (err) {
+        console.warn('Gallery init failed', err);
+      }
+    });
+  </script>
+  <script>
+    AOS.init({ once: true, duration: 900, offset: 60 });
+    gsap.from('.hero-section h1', { opacity: 0, y: 60, duration: 1, delay: 0.2 });
+    gsap.from('.hero-section p', { opacity: 0, y: 40, duration: 1, delay: 0.5 });
+  </script>
 </body>
+
 </html>

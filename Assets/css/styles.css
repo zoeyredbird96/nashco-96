@@ -1,0 +1,1615 @@
+/* Zahy logo image in header - revert to previous size */
+.zahy-logo-img-header {
+    max-width: 220px;
+    width: 180px;
+    height: 80px;
+    object-fit: contain;
+}
+
+/* Industry Focus section items */
+.industry-focus-item {
+    font-size: 1rem;
+    color: #444;
+    background: none;
+    padding: 0.2em 0;
+    margin-bottom: 0.5em;
+    text-align: center;
+}
+
+/* Industry Focus division headings styling */
+.industry-focus-title {
+    font-family: 'Montserrat', 'Copperplate Gothic Light', Arial, sans-serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #0e4761;
+    background: #f5f7fa;
+    border-radius: 8px;
+    padding: 0.5em 1em;
+    margin-bottom: 0.5em;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(14, 71, 97, 0.06);
+    letter-spacing: 0.5px;
+}
+
+/* Footer layout: single deep blue row, no white box */
+.footer-content-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background: none;
+    padding: 0 2vw;
+}
+
+.footer-col {
+    flex: 1 1 0;
+    min-width: 220px;
+    padding: 0.5rem 0.5vw;
+    background: none;
+}
+
+.footer-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-copyright {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+/* Unified footer: match navbar height */
+.footer-section {
+    min-height: 72px;
+    height: 72px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: #0e4761;
+}
+
+.footer-unified {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+    color: #fff;
+    font-size: 0.85rem;
+}
+
+.footer-contact-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 0.5em;
+}
+
+.footer-copyright {
+    text-align: center;
+    color: #fff;
+    font-size: 0.75rem;
+    margin-top: 0.5em;
+}
+
+/* 3D continuous rotation for Nashco logo */
+.logo-nashco-3d {
+    width: 180px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    animation: logo3DRotate 3.5s linear infinite;
+    transform-style: preserve-3d;
+    will-change: transform;
+}
+
+@keyframes logo3DRotate {
+    0% {
+        transform: perspective(600px) rotateY(0deg) rotateX(0deg);
+    }
+
+    100% {
+        transform: perspective(600px) rotateY(360deg) rotateX(10deg);
+    }
+}
+
+/* Nashco animated logo styles */
+.main-header {
+    padding: 0.25rem 0;
+    border-bottom: 1px solid rgba(16, 22, 29, 0.06);
+    backdrop-filter: blur(6px);
+    position: sticky;
+    top: 0;
+    z-index: 60;
+    background: rgba(255, 255, 255, 0.92);
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1rem;
+    min-height: 72px;
+    gap: 1rem;
+}
+
+.navbar-brand .logo {
+    height: 56px;
+    width: auto;
+    display: block;
+}
+
+.nav-links {
+    display: flex;
+    gap: 0.75rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}
+
+.nav-links a {
+    color: #0B0E17;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.98rem;
+    padding: 0.6rem 0.9rem;
+    border-radius: 8px;
+    transition: all 0.18s ease-in-out;
+    display: inline-block;
+}
+
+.nav-links a:hover {
+    background: rgba(0, 163, 173, 0.08);
+    color: var(--accent);
+    transform: translateY(-1px);
+}
+
+.nav-links a.active {
+    color: var(--accent);
+    background: rgba(0, 163, 173, 0.10);
+}
+
+@media (max-width: 991px) {
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        gap: 0.5rem;
+    }
+
+    .navbar {
+        padding: 0 0.8rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .nav-links {
+        justify-content: center;
+        width: 100%;
+        margin-top: 0.5rem;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0.25rem;
+    }
+}
+
+.logo-nashco-navbar-giant {
+    height: 72px !important;
+    max-height: 80px !important;
+    max-width: 220px !important;
+    width: auto !important;
+    background: transparent !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    margin-bottom: 0 !important;
+    display: inline-block !important;
+    vertical-align: middle !important;
+    border: none !important;
+    outline: none !important;
+    object-fit: contain !important;
+    padding: 0 !important;
+}
+
+/* Hero Section Backgrounds */
+.hero-automotive {
+    background: url('Assets/images/automotive-hero.webp') center/cover no-repeat;
+}
+
+.hero-manufacturing {
+    background: url('Assets/images/manufacturing-hero.webp') center/cover no-repeat;
+}
+
+.hero-trading {
+    background: url('Assets/images/trading-hero.webp') center/cover no-repeat;
+}
+
+/* Hero Overlay */
+.hero-overlay-dark {
+    background: rgba(0, 0, 0, 0.45) !important;
+}
+
+/* Licensed By Image in Footer */
+.licensed-by-img {
+    max-width: 420px;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.18);
+    margin-bottom: 0.5rem;
+}
+
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Open+Sans:wght@400;600&family=Poppins:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Copperplate:wght@300&display=swap');
+
+:root {
+    --bg-900: #0B0E17;
+    /* primary deep */
+    --bg-800: #0F1626;
+    /* secondary deep */
+    --surface-500: #4A5568;
+    /* mid-tone cards */
+    --accent: #00A3AD;
+    /* teal-cyan */
+    --white: #FFFFFF;
+    --muted: #B7C9CC;
+    /* subtle mid text */
+    --shadow-accent: rgba(0, 163, 173, 0.08);
+    --card-border: rgba(74, 85, 104, 0.12);
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    background: linear-gradient(180deg, var(--bg-900), var(--bg-800));
+    color: var(--white);
+    font-family: 'Montserrat', 'Open Sans', 'Poppins', Arial, sans-serif;
+    font-size: 1rem;
+    line-height: 1.7;
+    margin: 0;
+    /* account for fixed-top navbar so content isn't hidden under it */
+    padding-top: 96px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    transition: background 0.3s, color 0.3s;
+}
+
+/* Header/Navbar */
+.main-header {
+    /* background is now controlled by JS for translucency effect */
+    padding: 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(6px);
+    position: sticky;
+    top: 0;
+    z-index: 50;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2.5rem;
+    min-height: 96px;
+    background: rgba(255, 255, 255, 0.92) !important;
+    backdrop-filter: blur(6px);
+}
+
+.navbar .nav-link,
+.navbar-brand,
+.navbar .navbar-toggler {
+    color: #0B0E17 !important;
+}
+
+.navbar .nav-link.active {
+    color: #008A95 !important;
+    font-weight: 600;
+}
+
+/* Index-only navbar spacing: scoped to pages with body.index-page + nav.index-navbar */
+.index-page .index-navbar .navbar-nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 1.6rem;
+    align-items: center;
+}
+
+.index-page .index-navbar .nav-item {
+    flex: 1 1 auto;
+    text-align: center;
+}
+
+.index-page .index-navbar .nav-link {
+    display: block;
+    padding: 0.6rem 0;
+    font-weight: 700;
+}
+
+@media (max-width: 768px) {
+    .index-page .index-navbar .navbar-nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .index-page .index-navbar .nav-item {
+        text-align: left;
+        width: 100%;
+    }
+}
+
+.navbar-brand .logo {
+    max-height: 80px;
+    width: auto;
+    vertical-align: middle;
+    border-radius: 8px;
+    background: transparent !important;
+    padding: 0 !important;
+    box-shadow: none !important;
+}
+
+.nav-links {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links a {
+    color: #F5F5F5;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.05rem;
+    letter-spacing: 0.5px;
+    transition: color 0.2s;
+    position: relative;
+    padding: 0.25rem 0;
+}
+
+/* Ensure plain .nav-link inside any navbar is bold */
+.navbar .nav-link {
+    font-weight: 700 !important;
+}
+
+.nav-links a.active,
+.nav-links a:hover {
+    color: var(--accent);
+}
+
+.nav-links a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: var(--accent);
+    transition: width 0.2s;
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+}
+
+.nav-links a:hover::after,
+.nav-links a.active::after {
+    width: 100%;
+}
+
+/* Hero Section */
+.hero,
+.hero-section {
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 0 60px;
+    text-align: center;
+    position: relative;
+    color: var(--white);
+}
+
+.hero.parallax {
+    background-size: cover;
+    background-position: center;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, rgba(11, 14, 23, 0.55), rgba(15, 22, 38, 0.55));
+    pointer-events: none;
+}
+
+.hero h1,
+.hero-title {
+    font-size: clamp(1.6rem, 6vw, 3.6rem);
+    font-weight: 700;
+    color: var(--white);
+    letter-spacing: 1px;
+    margin-bottom: 0.5rem;
+    text-shadow: 0 6px 20px rgba(0, 0, 0, 0.6);
+}
+
+.hero p,
+.hero-subtitle {
+    font-size: 1.05rem;
+    color: var(--muted);
+}
+
+/* Index-only hero modifications: plain background and centered video with side text */
+.index-page .hero-section {
+    background-color: #01051f;
+    padding: 40px 1rem;
+    text-align: left;
+}
+
+/* Remove vertical gap between video and text columns on the index hero */
+.index-page .hero-section .row {
+    --bs-gutter-x: 0 !important;
+    gap: 0 !important;
+}
+
+.index-page .hero-section .col-lg-6,
+.index-page .hero-section .col-lg-6 {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    border-right: none !important;
+}
+
+/* Move partition left so the right text column shifts left ~1in on large screens */
+@media (min-width: 992px) {
+
+    /* only shift the right (text) column left so the video remains inside the container */
+    .index-page .hero-section .col-lg-6:last-child {
+        transform: translateX(-1in);
+        /* keep layout stable */
+        will-change: transform;
+    }
+
+    /* ensure left video column doesn't collapse when text moves left */
+    .index-page .hero-section .col-lg-6:first-child {
+        padding-right: 0 !important;
+    }
+
+    /* make sure the container doesn't hide the shifted text */
+    .index-page .hero-section .container-fluid,
+    .index-page .hero-section {
+        overflow: visible;
+    }
+}
+
+.index-page .hero-section .hero-video {
+    width: 100%;
+    max-width: 380px;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.34);
+    background-color: #01051f;
+    transform: translate(0, 2px);
+    /* reduce gap to the right (closer to the welcome text) */
+    margin-right: 0.5rem;
+    /* slight left offset from column edge */
+    margin-left: 1rem;
+}
+
+/* Left-align hero text, paragraph and CTA in the right column on all sizes */
+.index-page .hero-section .col-lg-4 {
+    text-align: left !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+}
+
+.index-page .hero-section .col-lg-4 h1,
+.index-page .hero-section .col-lg-4 p {
+    text-align: left !important;
+}
+
+.index-page .hero-section .col-lg-4 .d-flex {
+    justify-content: flex-start !important;
+    width: 100%;
+}
+
+.index-page .hero-section .col-lg-4 .btn {
+    align-self: flex-start !important;
+}
+
+/* Reduce left/right internal padding of hero columns to tighten spacing */
+.index-page .hero-section .col-lg-6:first-child {
+    padding-right: 1.5rem;
+    /* increase left padding so the video moves inward from the column edge */
+    padding-left: 2rem;
+}
+
+.index-page .hero-section .col-lg-6:last-child {
+    padding-left: 0.25rem;
+}
+
+/* Reduce horizontal gutter between video and text in hero */
+.index-page .hero-section .row {
+    --bs-gutter-x: 0.25rem;
+}
+
+/* Slightly reduce padding on hero columns to bring them closer */
+.index-page .hero-section .col-lg-8 {
+    padding-right: 1.5rem;
+}
+
+.index-page .hero-section .col-lg-4 {
+    padding-left: 0.5rem;
+}
+
+.index-page .hero-section .lead {
+    font-size: 1.05rem;
+    color: #e6f6f8;
+}
+
+/* Nudge hero heading and lead a few notches left on wider screens */
+@media (min-width: 992px) {
+
+    .index-page .hero-section .col-lg-4 h1,
+    .index-page .hero-section .col-lg-4 p.lead {
+        margin-left: -8rem;
+    }
+}
+
+/* Index page: below-hero white-dominant theme and standardized typography */
+.index-page {
+    --index-font-family: 'Open Sans', 'Montserrat', Arial, sans-serif;
+    font-family: var(--index-font-family);
+    font-size: 16px;
+    color-scheme: light;
+    /* account for the fixed navbar so hero content isn't cropped */
+    padding-top: 96px;
+}
+
+/* Apply white background for sections that appear below the hero on the index page */
+.index-page .visual-tiles,
+.index-page .tiles-grid,
+.index-page .services,
+.index-page .service-card,
+.index-page .tile,
+.index-page .stock-gallery,
+.index-page .section,
+.index-page .main-footer {
+    background: #ffffff !important;
+    color: #073047 !important;
+}
+
+/* Standardize body text on index page */
+.index-page p,
+.index-page li,
+.index-page a,
+.index-page label,
+.index-page span {
+    color: #163047;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* Blue boxes used for highlighted text blocks */
+.index-page .blue-box {
+    background: linear-gradient(180deg, #0e4761 0%, #08324a 100%);
+    color: #ffffff;
+    padding: 1rem 1.25rem;
+    border-radius: 12px;
+    box-shadow: 0 12px 30px rgba(14, 71, 97, 0.08);
+    border: 1px solid rgba(3, 36, 55, 0.08);
+}
+
+/* Light card style for service tiles */
+.index-page .service-card {
+    background: #f7fbff !important;
+    border: 1px solid #e6f3fb !important;
+    box-shadow: none !important;
+    color: #073047 !important;
+}
+
+/* Tile items light background */
+.index-page .tile {
+    background: #ffffff !important;
+    border: 1px solid #e9f2f9 !important;
+    color: #073047 !important;
+}
+
+/* Footer becomes light on index page to match new theme */
+.index-page .main-footer {
+    background: #ffffff !important;
+    color: #163047 !important;
+}
+
+/* Ensure CTA still stands out on white backgrounds */
+.index-page .cta-btn {
+    box-shadow: 0 8px 30px rgba(0, 163, 173, 0.08);
+}
+
+/* Buttons/links color adjustments */
+.index-page .nav-links a,
+.index-page .learn-more {
+    color: #0e4761 !important;
+}
+
+/* Why Choose section: white background, keep the feature boxes dark with white text */
+.index-page .why-choose-section {
+    background: #ffffff !important;
+    color: #073047 !important;
+}
+
+.index-page .why-choose-section .p-4.bg-white {
+    background: linear-gradient(180deg, #0e4761 0%, #072134 100%) !important;
+    color: #ffffff !important;
+    border-radius: 12px;
+    box-shadow: 0 14px 40px rgba(7, 30, 45, 0.12) !important;
+    border: 1px solid rgba(0, 0, 0, 0.06) !important;
+}
+
+.index-page .why-choose-section .p-4.bg-white h5,
+.index-page .why-choose-section .p-4.bg-white p,
+.index-page .why-choose-section .p-4.bg-white .text-primary {
+    color: #ffffff !important;
+}
+
+.index-page .why-choose-section .text-muted {
+    color: rgba(255, 255, 255, 0.85) !important;
+}
+
+/* Our Story & Vision: standardized body typography (index page) */
+.index-page .our-story-section {
+    font-family: var(--index-font-family);
+    color: #163047;
+}
+
+.index-page .our-story-section h2 {
+    color: #072033;
+}
+
+/* Ensure Our Story section background is white to match site theme */
+.index-page .our-story-section {
+    background: #ffffff !important;
+    color: #073047 !important;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.index-page .our-story-section p,
+.index-page .our-story-section ul,
+.index-page .our-story-section li {
+    font-size: 1.05rem;
+    line-height: 1.7;
+    color: #163047;
+    font-family: var(--index-font-family);
+    margin-bottom: 1rem;
+}
+
+.index-page .our-story-section ul {
+    padding-left: 1.25rem;
+}
+
+.index-page .our-story-section .fs-5,
+.index-page .our-story-section .fs-6 {
+    font-size: 1.05rem !important;
+}
+
+.index-page .our-story-section img {
+    border-radius: 10px;
+}
+
+/* Story column alignment and indentation tweaks */
+.index-page .our-story-section .story-text-col {
+    text-align: left;
+    padding-right: 2rem;
+}
+
+.index-page .our-story-section .story-media-col {
+    text-align: right;
+    padding-left: 2rem;
+}
+
+.index-page .our-story-section .story-bullets {
+    list-style: disc;
+    margin-left: 1.25rem;
+    padding-left: 0.5rem;
+}
+
+.index-page .our-story-section .story-bullets li {
+    margin-bottom: 0.6rem;
+}
+
+/* Make sure headings align with content */
+.index-page .our-story-section .row.mb-4 .col.text-center {
+    text-align: center;
+}
+
+@media (min-width: 992px) {
+
+    .index-page .hero-section .col-lg-4 h1,
+    .index-page .hero-section .col-lg-4 p.lead {
+        margin-left: -3rem;
+    }
+
+    /* ensure right column has minimal left padding so text can move left */
+    .index-page .hero-section .col-lg-4 {
+        padding-left: 0;
+    }
+}
+
+text-align: center;
+}
+
+.index-page .our-story-section .story-bullets {
+    margin-left: 0;
+    padding-left: 0;
+}
+}
+
+
+@media (max-width: 992px) {
+    .index-page .hero-section {
+        text-align: center;
+        padding: 40px 1rem;
+    }
+
+    .index-page .hero-section .col-lg-8,
+    .index-page .hero-section .col-lg-4 {
+        order: initial;
+    }
+
+    .index-page .hero-section .hero-video {
+        margin: 0 auto;
+    }
+}
+
+.cta-btn {
+    background: linear-gradient(90deg, var(--accent), #00D1D6);
+    color: var(--white);
+    border: none;
+    border-radius: 10px;
+    padding: 0.75rem 2.5rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    box-shadow: 0 8px 30px var(--shadow-accent);
+    transition: transform 0.12s, box-shadow 0.2s, opacity 0.2s;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.cta-btn:hover,
+.cta-btn:focus {
+    transform: translateY(-2px);
+    box-shadow: 0 14px 40px var(--shadow-accent);
+    opacity: 0.98;
+}
+
+/* Visual Tiles */
+.visual-tiles {
+    background: transparent;
+    padding: 40px 0 20px 0;
+}
+
+/* Standardized plain hero used across pages */
+.site-hero {
+    height: 40vh;
+    min-height: 220px;
+    max-height: 560px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background: none !important;
+    padding: 0 !important;
+    position: relative;
+}
+
+.site-hero__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* small screens: slightly shorter hero */
+@media (max-width: 767px) {
+    .site-hero {
+        height: 28vh;
+        min-height: 160px;
+    }
+}
+
+/* remove legacy overlay for site-hero */
+.site-hero::before {
+    display: none !important;
+}
+
+.tiles-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.tile {
+    position: relative;
+    min-height: 220px;
+    border-radius: 16px;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 8px 28px rgba(0, 0, 0, 0.36);
+    transition: transform 0.22s, box-shadow 0.22s;
+}
+
+.tile:hover {
+    transform: scale(1.03);
+    box-shadow: 0 18px 48px var(--shadow-accent);
+}
+
+.tile-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(11, 14, 23, 0.18) 40%, rgba(0, 163, 173, 0.04) 100%);
+    display: flex;
+    align-items: flex-end;
+    padding: 1.5rem;
+}
+
+.tile-overlay h3 {
+    color: var(--white);
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin: 0;
+    letter-spacing: 0.5px;
+}
+
+/* Gallery / Swiper styles */
+.myGallerySwiper .swiper-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gallery-thumb {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 6px 20px rgba(3, 36, 55, 0.06);
+    transition: transform 0.18s, box-shadow 0.18s;
+}
+
+.gallery-thumb:hover {
+    transform: translateY(-4px) scale(1.02);
+    box-shadow: 0 18px 40px rgba(3, 36, 55, 0.12);
+}
+
+/* Swiper nav color */
+.myGallerySwiper .swiper-button-next,
+.myGallerySwiper .swiper-button-prev {
+    color: #0e4761;
+}
+
+/* Make gallery navigation more visible */
+.myGallerySwiper .swiper-button-next,
+.myGallerySwiper .swiper-button-prev {
+    width: 44px;
+    height: 44px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.95);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+}
+
+.myGallerySwiper .swiper-button-next::after,
+.myGallerySwiper .swiper-button-prev::after {
+    font-size: 18px;
+    color: #0e4761;
+}
+
+/* Make pagination bullets visible on desktop */
+.myGallerySwiper .swiper-pagination-bullet {
+    background: rgba(14, 71, 97, 0.9);
+    opacity: 1;
+}
+
+/* Slightly peek next slide to indicate more content */
+.myGallerySwiper .swiper-slide {
+    transition: transform 0.18s;
+}
+
+.myGallerySwiper .swiper-wrapper {
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+/* Swipe hint: thin font, lightest grey pill, bounce kept inside container */
+.myGallerySwiper {
+    overflow: visible;
+}
+
+.myGallerySwiper .swipe-hint {
+    display: inline-block;
+    font-size: 0.9rem;
+    font-weight: 300;
+    /* thin */
+    color: #111111;
+    /* dark text for contrast */
+    background: linear-gradient(90deg, #f5f6f7 0%, #eef0f2 100%);
+    /* light grey */
+    padding: 0.28rem 0.6rem;
+    border-radius: 999px;
+    box-shadow: 0 6px 12px rgba(10, 10, 12, 0.06);
+    border: 1px solid rgba(0, 0, 0, 0.04);
+    letter-spacing: 0.2px;
+    transform-origin: center;
+    animation: swipePulseInside 1.6s ease-in-out infinite;
+    margin: 0 auto;
+    /* center inside parent */
+    line-height: 1;
+}
+
+@keyframes swipePulseInside {
+    0% {
+        transform: translateY(0) scale(1);
+    }
+
+    50% {
+        transform: translateY(-6px) scale(1.01);
+    }
+
+    100% {
+        transform: translateY(0) scale(1);
+    }
+}
+
+/* Ensure parent container allows the pill to move without being clipped */
+.myGallerySwiper>.text-center.mb-2 {
+    padding-top: 12px;
+    /* space for the bounce */
+    overflow: visible;
+}
+
+@media (max-width: 768px) {
+    .myGallerySwiper .swipe-hint {
+        font-size: 0.82rem;
+        padding: 0.22rem 0.5rem;
+    }
+
+    .myGallerySwiper>.text-center.mb-2 {
+        padding-top: 8px;
+    }
+}
+
+/* Stronger, high-contrast nav buttons and clearer bullets */
+.myGallerySwiper .swiper-button-next,
+.myGallerySwiper .swiper-button-prev {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background: rgba(3, 36, 55, 0.95) !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 12px 28px rgba(3, 36, 55, 0.28);
+    border: 2px solid rgba(255, 255, 255, 0.06);
+    z-index: 60;
+    transition: transform 0.14s, background 0.14s;
+}
+
+.myGallerySwiper .swiper-button-next::after,
+.myGallerySwiper .swiper-button-prev::after {
+    font-size: 20px;
+    color: #ffffff;
+    opacity: 1;
+}
+
+.myGallerySwiper .swiper-button-next:hover,
+.myGallerySwiper .swiper-button-prev:hover {
+    transform: translateY(-50%) scale(1.06);
+    background: rgba(3, 36, 55, 1) !important;
+}
+
+/* Move arrows further outside for better visibility */
+.myGallerySwiper .swiper-button-prev {
+    left: -40px;
+}
+
+.myGallerySwiper .swiper-button-next {
+    right: -40px;
+}
+
+@media (max-width: 768px) {
+    .myGallerySwiper .swiper-button-prev {
+        left: -8px;
+    }
+
+    .myGallerySwiper .swiper-button-next {
+        right: -8px;
+    }
+
+    .myGallerySwiper .swiper-button-next,
+    .myGallerySwiper .swiper-button-prev {
+        width: 44px;
+        height: 44px;
+    }
+}
+
+/* Make pagination bullets prominent */
+.myGallerySwiper .swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    background: #ffffff;
+    opacity: 0.95;
+    border: 1px solid rgba(3, 36, 55, 0.12);
+}
+
+/* Ensure arrows are above other overlays */
+.myGallerySwiper .swiper-button-next,
+.myGallerySwiper .swiper-button-prev {
+    pointer-events: auto;
+}
+
+/* Position navigation buttons outside the slides and vertically centered */
+.myGallerySwiper {
+    position: relative;
+    padding-left: 40px;
+    /* space for left nav */
+    padding-right: 40px;
+    /* space for right nav */
+}
+
+.myGallerySwiper .swiper-button-prev,
+.myGallerySwiper .swiper-button-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 30;
+}
+
+.myGallerySwiper .swiper-button-prev {
+    left: -24px;
+    /* outside the image area */
+}
+
+.myGallerySwiper .swiper-button-next {
+    right: -24px;
+    /* outside the image area */
+}
+
+@media (max-width: 768px) {
+    .myGallerySwiper {
+        padding-left: 18px;
+        padding-right: 18px;
+    }
+
+    .myGallerySwiper .swiper-button-prev {
+        left: 6px;
+    }
+
+    .myGallerySwiper .swiper-button-next {
+        right: 6px;
+    }
+}
+
+/* Make gallery container explicitly white on index page */
+.index-page .gallery-section {
+    background: #ffffff !important;
+    color: #073047 !important;
+}
+
+@media (max-width: 768px) {
+    .gallery-thumb {
+        height: 160px;
+    }
+}
+
+/* Service Cards */
+.services {
+    background: transparent;
+    padding: 60px 0 40px 0;
+}
+
+.service-card {
+    background: linear-gradient(135deg, rgba(15, 22, 38, 0.6), rgba(11, 14, 23, 0.6));
+    border-radius: 14px;
+    border: 1px solid var(--card-border);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.36);
+    padding: 2rem 1.5rem 1.5rem 1.5rem;
+    margin-bottom: 2rem;
+    min-height: 260px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: box-shadow 0.22s, transform 0.22s;
+}
+
+.service-card:hover {
+    box-shadow: 0 18px 48px var(--shadow-accent);
+    transform: translateY(-6px) scale(1.02);
+}
+
+.service-card h4 {
+    color: #F5F5F5;
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 0.7rem;
+    letter-spacing: 0.5px;
+}
+
+.service-card p {
+    color: #B0B0B0;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 1.2rem;
+}
+
+.learn-more {
+    color: var(--accent);
+    text-decoration: underline;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: color 0.2s;
+}
+
+.learn-more:hover,
+.learn-more:focus {
+    color: #8FF5F7;
+    text-decoration: underline;
+}
+
+/* Footer */
+
+.main-footer {
+    background: linear-gradient(180deg, var(--bg-800), rgba(11, 14, 23, 0.86));
+    color: var(--muted);
+    font-size: 0.95rem;
+    padding: 32px 0 18px 0;
+    text-align: center;
+    letter-spacing: 0.5px;
+}
+
+/* Footer: match navbar font, logo size, and vertical alignment */
+.main-footer.zahy-footer {
+    min-height: 110px;
+    height: 110px;
+    padding-top: 0;
+    padding-bottom: 0;
+    display: flex;
+    align-items: flex-end;
+    background: #0e4761 !important;
+}
+
+.footer-content-row {
+    align-items: flex-end;
+    min-height: 110px;
+    height: 110px;
+    padding-top: 0;
+    padding-bottom: 0;
+    gap: 0;
+}
+
+.footer-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0 0.5vw;
+    min-width: 180px;
+}
+
+.footer-contact-info {
+    font-nizeze0.82r0m82rem;
+    in-ehheeghi: 1.1;
+    1olor: #fff !importa1;
+    color: #fff !im0.08m: 0.08rem;
+
+    font-weight: 400;
+
+    .footer-contact-info:last-child {
+        margin-bottom: 0;
+    }
+
+    :lt-child gbottom: 0 .footer-contact-icon {
+        width: 18px;
+        height: 18px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 4px;
+    }
+
+    4 .powered-by-nashco {
+        font-size: 0.82rem;
+        color: #fff;
+        margin-bottom: 0.1rem;
+        font-family: 'Montserrat', 'Segoe UI', Arial, sans-serif;
+        font-weight: 400;
+        text-align: center;
+    }
+
+    .footer-copyright p {
+        font-size: 0.82rem;
+        color: #fff;
+        height: 80px;
+        object-fit: contain;
+        margin: 0 auto 0.08rem auto;
+        display: block;
+    }
+
+    /* Stock Gallery (if used) */
+    .stock-gallery {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        gap: 1.2rem8 margin-8op: 1.5rem;
+    }
+
+    80px;
+    objec-fit: cntain: 0 au auto display: block;
+
+    .stock-gallery img {
+        width: 100%;
+        border-radius: 10px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+        transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .stock-gallery img:hover {
+        transform: scale(1.04);
+        box-shadow: 0 14px 40px var(--shadow-accent);
+    }
+
+    /* Typography */
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: 'Montserrat', 'Poppins', Arial, sans-serif;
+        font-weight: 700;
+        letter-spacing: 0.5px;
+        color: var(--white);
+        margin-top: 0;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    h2 {
+        font-size: 2.2rem;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+    }
+
+    h4 {
+        font-size: 1.2rem;
+    }
+
+    p,
+    li,
+    a,
+    span,
+    label {
+        font-family: 'Open Sans', 'Montserrat', Arial, sans-serif;
+        font-size: 1rem;
+        color: var(--muted);
+        font-weight: 400;
+    }
+
+    /* Copperplate Light Font Classes */
+    .copperplate-light {
+        font-family: 'Copperplate', 'Copperplate Gothic Light', 'Arial', sans-serif;
+        font-weight: 300;
+        text-transform: capitalize;
+        font-size: 4rem;
+    }
+
+    .section-heading.copperplate-small,
+    .copperplate-small {
+        font-size: 2.4rem;
+    }
+
+    .copperplate-light span.first-letter {
+        font-size: 1.3em;
+        vertical-align: baseline;
+        font-weight: 400;
+    }
+
+    .section-heading {
+        font-family: 'Montserrat', 'Open Sans', Arial, sans-serif;
+        font-size: 4rem;
+        font-weight: 700;
+        color: #0e4761;
+        letter-spacing: 0.5px;
+        margin-top: 1.5rem;
+        margin-bottom: 1.2rem;
+        line-height: 1.2;
+    }
+
+    .section-heading.text-center {
+        text-align: center;
+    }
+
+    .rfq-form-reduced .form-control {
+        width: 50%;
+        min-width: 180px;
+        font-family: 'Copperplate', 'Copperplate Gothic Light', 'Arial', sans-serif;
+        font-size: 1.2rem;
+    }
+
+    @media (max-width: 600px) {
+        .rfq-form-reduced .form-control {
+            width: 90%;
+            min-width: 120px;
+        }
+    }
+
+    /* Responsive */
+    @media (max-width: 1200px) {
+        .tiles-grid {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .navbar {
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 0 1rem;
+        }
+
+        .nav-links {
+            gap: 1rem;
+        }
+
+        .tiles-grid {
+            grid-template-columns: 1fr;
+        }
+
+        .hero-title {
+            font-size: 2.1rem;
+        }
+
+        .hero-section {
+            padding: 40px 0 20px 0;
+        }
+
+        .services {
+            padding: 40px 0 20px 0;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .navbar {
+            padding: 0 0.5rem;
+        }
+
+        .hero-title {
+            font-size: 1.4rem;
+        }
+
+        .main-footer {
+            font-size: 0.85rem;
+        }
+    }
+
+    /* Accessibility */
+    a:focus,
+    button:focus,
+    .cta-btn:focus {
+        outline: 2px solid var(--accent);
+        outline-offset: 2px;
+    }
+
+    /* Nashco logo in footer: 4x larger than previous (now 40px) */
+    .zahy-logo-img-footer {
+        /* Acc ssmb:li4yx*/
+        a: idcus,
+            buht0;
+        : focu,
+            .ct-bt:focu heigoutlaueo;
+        solidvar(--accent) margnutli-eoofftmt: 2px;
+    }
+
+    /*Nashcologoinoer 4xlargrthpevous (now 40px) */
+    .zhy-ogo-imgfoot {
+        max-width: 40px;
+        with4px
+        /* height:Fauto;
+ootemargin-b:ttcmmp0.08remM
+}
+ontserrat and Open Sans for contact info */
+        /*eFooter:rcompare-Moncsorrat cndoOpmn Sans oor contacn info */
+    }
+
+    o.mntserrat ter-contafamtlynf'Montsereat',
+    'Segon UI',
+    rial,
+    san-erf;
+}
+
+.oter-onac-io.penfn-famiy'OenSan',
+Ail,
+sasrif
+
+/* Copperplate Gothic Light, font size 15px, all caps for headings */
+.copperplate-heading {
+    font-family: 'Copperplate', 'Copperplate Gothic Light', 'Arial', sans-serif !important;
+    font-size: 10px !important;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: #0e4761;
+    margin-top: 1.5rem;
+    margin-bottom: 1.2rem;
+    line-height: 1.2;
+}
+
+/* Ideal heading style for all main content headings */
+.ideal-heading {
+    font-family: 'Copperplate', 'Copperplate Gothic Light', 'Montserrat', Arial, sans-serif;
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #0e4761;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: 1.5rem;
+    margin-bottom: 1.2rem;
+    line-height: 1.2;
+}
+
+/* Smaller powered-by Nashco Global text in footer */
+.powered-by-nashco-small {
+    font-size: 0.72rem;
+    color: #fff;
+    font-family: 'Montserrat', 'Segoe UI', Arial, sans-serif;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 0.1em;
+}
+
+/* Translucent navbar on scroll: toggled via JS */
+.navbar {
+    transition: background-color 220ms ease, backdrop-filter 220ms ease, box-shadow 220ms ease;
+}
+
+.navbar.translucent {
+    background-color: rgba(1, 5, 31, 0.7) !important;
+    backdrop-filter: blur(6px) saturate(120%);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.18);
+}
+
+/* Final overrides: unify swiper nav appearance and position (high-contrast, circular, outside images on desktop) */
+.myGallerySwiper {
+    position: relative;
+}
+
+.myGallerySwiper .swiper-button-prev,
+.myGallerySwiper .swiper-button-next {
+    width: 56px !important;
+    height: 56px !important;
+    border-radius: 50% !important;
+    background: linear-gradient(180deg, var(--accent), #00D1D6) !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    box-shadow: 0 14px 36px rgba(3, 36, 55, 0.28) !important;
+    border: none !important;
+    z-index: 90 !important;
+    pointer-events: auto !important;
+}
+
+.myGallerySwiper .swiper-button-prev::after,
+.myGallerySwiper .swiper-button-next::after {
+    color: #ffffff !important;
+    font-size: 20px !important;
+    opacity: 1 !important;
+}
+
+/* Ensure SVG arrows inside nav buttons are visible and sized */
+.myGallerySwiper .swiper-button-next svg,
+.myGallerySwiper .swiper-button-prev svg {
+    width: 20px;
+    height: 20px;
+    display: block;
+    color: #ffffff;
+}
+
+.myGallerySwiper .swiper-button-next svg path,
+.myGallerySwiper .swiper-button-prev svg path {
+    stroke: #ffffff;
+}
+
+/* Place arrows clearly outside the image area on desktop */
+.myGallerySwiper .swiper-button-prev {
+    left: -68px !important;
+}
+
+.myGallerySwiper .swiper-button-next {
+    right: -68px !important;
+}
+
+@media (max-width: 768px) {
+
+    /* on small screens keep arrows inside and slightly smaller */
+    .myGallerySwiper .swiper-button-prev,
+    .myGallerySwiper .swiper-button-next {
+        width: 44px !important;
+        height: 44px !important;
+    }
+
+    .myGallerySwiper .swiper-button-prev {
+        left: 8px !important;
+    }
+
+    .myGallerySwiper .swiper-button-next {
+        right: 8px !important;
+    }
+}
+
+/* ensure bullets remain visible */
+.myGallerySwiper .swiper-pagination-bullet {
+    background: #ffffff !important;
+    opacity: 1 !important;
+}
+
+/* Custom persistent nav buttons placed next to first and third slides */
+.custom-gallery-nav {
+    position: absolute;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background: rgba(3, 36, 55, 0.96);
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 12px 28px rgba(3, 36, 55, 0.28);
+    border: none;
+    z-index: 999;
+    cursor: pointer;
+}
+
+.custom-gallery-nav svg {
+    width: 22px;
+    height: 22px;
+}
+
+.custom-gallery-nav:focus {
+    outline: 2px solid rgba(0, 163, 173, 0.18);
+}
+
+@media (max-width: 768px) {
+    .custom-gallery-nav {
+        width: 44px;
+        height: 44px;
+    }
+
+    .custom-gallery-nav svg {
+        width: 18px;
+        height: 18px;
+    }
+}
