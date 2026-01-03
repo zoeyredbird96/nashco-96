@@ -147,24 +147,82 @@
         <div class="col-lg-7 mx-auto" data-aos="fade-up">
           <h2 class="fw-bold mb-3">Get in Touch</h2>
           <form action="https://formspree.io/f/mnqewqzv" method="POST" class="needs-validation" novalidate>
+            <!-- CSRF protection token (to be implemented server-side) -->
+            <input type="hidden" name="_csrf" value="">
+            
             <div class="mb-3">
               <label for="name" class="form-label">Name</label>
-              <input type="text" class="form-control" id="name" name="name" required aria-required="true">
-              <div class="invalid-feedback">Please enter your name.</div>
+              <input type="text" 
+                     class="form-control" 
+                     id="name" 
+                     name="name" 
+                     required 
+                     aria-required="true"
+                     autocomplete="name"
+                     minlength="2"
+                     maxlength="100"
+                     pattern="^[a-zA-Z\s\-'\.]+$"
+                     placeholder="Enter your full name">
+              <div class="invalid-feedback">Please enter your name (letters only, 2-100 characters).</div>
             </div>
+            
             <div class="mb-3">
               <label for="email" class="form-label">Email</label>
-              <input type="email" class="form-control" id="email" name="email" required aria-required="true">
+              <input type="email" 
+                     class="form-control" 
+                     id="email" 
+                     name="email" 
+                     required 
+                     aria-required="true"
+                     autocomplete="email"
+                     pattern="^[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}$"
+                     placeholder="your.email@example.com">
               <div class="invalid-feedback">Please enter a valid email address.</div>
             </div>
+            
+            <div class="mb-3">
+              <label for="phone" class="form-label">Phone Number (Optional)</label>
+              <input type="tel" 
+                     class="form-control" 
+                     id="phone" 
+                     name="phone"
+                     autocomplete="tel"
+                     pattern="^[\+]?[(]?[0-9]{1,4}[)]?[\s\-]?[(]?[0-9]{1,4}[)]?[\s\-]?[0-9]{1,9}$"
+                     placeholder="+1 (555) 123-4567">
+              <div class="invalid-feedback">Please enter a valid phone number.</div>
+            </div>
+            
+            <div class="mb-3">
+              <label for="company" class="form-label">Company (Optional)</label>
+              <input type="text" 
+                     class="form-control" 
+                     id="company" 
+                     name="company"
+                     autocomplete="organization"
+                     maxlength="100"
+                     placeholder="Your company name">
+            </div>
+            
             <div class="mb-3">
               <label for="message" class="form-label">Message</label>
-              <textarea class="form-control" id="message" name="message" rows="5" required
-                aria-required="true"></textarea>
-              <div class="invalid-feedback">Please enter your message.</div>
+              <textarea class="form-control" 
+                        id="message" 
+                        name="message" 
+                        rows="5" 
+                        required
+                        aria-required="true"
+                        minlength="10"
+                        maxlength="1000"
+                        placeholder="Tell us about your inquiry..."></textarea>
+              <div class="invalid-feedback">Please enter your message (10-1000 characters).</div>
             </div>
+            
+            <!-- Honeypot field for spam protection -->
+            <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
+            
             <button type="submit" class="btn btn-primary">Send Message</button>
             <input type="hidden" name="_replyto" value="info@nashcoglobal.com">
+            <input type="hidden" name="_subject" value="New Contact Form Submission - Nashco Global">
           </form>
         </div>
         <div class="col-lg-6 mx-auto mt-5" data-aos="fade-up" data-aos-delay="100">
