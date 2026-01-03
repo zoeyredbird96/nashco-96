@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Nashco Global - Contact Us</title>
+  <meta name="description" content="Get in touch with Nashco Global. Contact our team for chemicals, automotive, manufacturing, and trading solutions. Multiple offices across the GCC region.">
   <link rel="manifest" href="manifest.json">
   <meta name="theme-color" content="#0B0E17">
   <link rel="apple-touch-icon" href="Assets/images/logo-nashco.png">
@@ -147,22 +148,62 @@
         <div class="col-lg-7 mx-auto" data-aos="fade-up">
           <h2 class="fw-bold mb-3">Get in Touch</h2>
           <form action="https://formspree.io/f/mnqewqzv" method="POST" class="needs-validation" novalidate>
-            <div class="mb-3">
-              <label for="name" class="form-label">Name</label>
-              <input type="text" class="form-control" id="name" name="name" required aria-required="true">
-              <div class="invalid-feedback">Please enter your name.</div>
+            <!-- CSRF Token Placeholder (implement server-side) -->
+            <input type="hidden" name="csrf_token" value="">
+            
+            <!-- Honeypot field for spam protection (hidden from users) -->
+            <div style="position: absolute; left: -9999px;" aria-hidden="true">
+              <input type="text" name="website" tabindex="-1" autocomplete="off">
             </div>
+            
             <div class="mb-3">
-              <label for="email" class="form-label">Email</label>
-              <input type="email" class="form-control" id="email" name="email" required aria-required="true">
+              <label for="name" class="form-label">Name *</label>
+              <input type="text" class="form-control" id="name" name="name" 
+                     pattern="^[a-zA-Z\u00C0-\u017F'\s\-\.]{2,100}$" 
+                     minlength="2" maxlength="100" 
+                     autocomplete="name"
+                     required aria-required="true"
+                     title="Please enter your full name (2-100 characters)">
+              <div class="invalid-feedback">Please enter your name (2-100 characters).</div>
+            </div>
+            
+            <div class="mb-3">
+              <label for="email" class="form-label">Email *</label>
+              <input type="email" class="form-control" id="email" name="email" 
+                     pattern="^[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}$"
+                     autocomplete="email"
+                     required aria-required="true"
+                     title="Please enter a valid email address">
               <div class="invalid-feedback">Please enter a valid email address.</div>
             </div>
+            
             <div class="mb-3">
-              <label for="message" class="form-label">Message</label>
-              <textarea class="form-control" id="message" name="message" rows="5" required
-                aria-required="true"></textarea>
-              <div class="invalid-feedback">Please enter your message.</div>
+              <label for="phone" class="form-label">Phone (optional)</label>
+              <input type="tel" class="form-control" id="phone" name="phone" 
+                     pattern="^\+?[0-9\s\-\(\)]{7,20}$"
+                     autocomplete="tel"
+                     title="Please enter a valid international phone number">
+              <div class="invalid-feedback">Please enter a valid phone number (international format accepted).</div>
             </div>
+            
+            <div class="mb-3">
+              <label for="company" class="form-label">Company (optional)</label>
+              <input type="text" class="form-control" id="company" name="company" 
+                     maxlength="100"
+                     autocomplete="organization"
+                     title="Enter your company name">
+            </div>
+            
+            <div class="mb-3">
+              <label for="message" class="form-label">Message *</label>
+              <textarea class="form-control" id="message" name="message" rows="5" 
+                        minlength="10" maxlength="1000"
+                        required aria-required="true"
+                        title="Please enter your message (10-1000 characters)"></textarea>
+              <div class="invalid-feedback">Please enter your message (10-1000 characters).</div>
+              <small class="form-text text-muted">Character count: <span id="charCount">0</span>/1000</small>
+            </div>
+            
             <button type="submit" class="btn btn-primary">Send Message</button>
             <input type="hidden" name="_replyto" value="info@nashcoglobal.com">
           </form>
@@ -225,6 +266,16 @@
         }, false);
       });
     })();
+    
+    // Character counter for message field
+    const messageField = document.getElementById('message');
+    const charCount = document.getElementById('charCount');
+    if (messageField && charCount) {
+      messageField.addEventListener('input', () => {
+        charCount.textContent = messageField.value.length;
+      });
+    }
+    
     AOS.init({ once: true, duration: 900, offset: 60 });
     gsap.from('.hero-section h1', { opacity: 0, y: 60, duration: 1, delay: 0.2 });
     gsap.from('.hero-section p', { opacity: 0, y: 40, duration: 1, delay: 0.5 });
