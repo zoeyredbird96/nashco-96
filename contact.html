@@ -159,12 +159,12 @@
             <div class="mb-3">
               <label for="name" class="form-label">Name *</label>
               <input type="text" class="form-control" id="name" name="name" 
-                     pattern="^[a-zA-Z\s]{2,100}$" 
+                     pattern="^[a-zA-Z\u00C0-\u017F'\s\-\.]{2,100}$" 
                      minlength="2" maxlength="100" 
                      autocomplete="name"
                      required aria-required="true"
-                     title="Please enter your full name (letters only, 2-100 characters)">
-              <div class="invalid-feedback">Please enter your name (letters only, 2-100 characters).</div>
+                     title="Please enter your full name (2-100 characters)">
+              <div class="invalid-feedback">Please enter your name (2-100 characters).</div>
             </div>
             
             <div class="mb-3">
